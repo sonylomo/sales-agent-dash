@@ -4,3 +4,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  font-family: "Satoshi", sans-serif;
+  background-color: #F8F8F8;
+}

@@ -1,7 +1,11 @@
+import AllSchools from "@/components/SchoolManagement/AllSchools";
+
 const SchoolManagement = () => {
   return (
-    <div>SchoolManagement</div>
-  )
-}
+    <div className="hidden flex-col md:flex">
+      <AllSchools />
+    </div>
+  );
+};
 
-export default SchoolManagement
+export default SchoolManagement;

@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import Dashboard from "@/pages/Dashboard";
 import SchoolManagement from "@/pages/SchoolManagement";
 import Layout from "@/components/Layout";
+import SingleSchool from "@/pages/SingleSchool";
 
 const router = createBrowserRouter([
   {
@@ -9,12 +10,16 @@ const router = createBrowserRouter([
     element: <Layout />,
     children: [
       {
-        path: "dashboard",
+        path: "/",
         element: <Dashboard />,
       },
       {
-        path: "school-management",
+        path: "/school-management",
         element: <SchoolManagement />,
+      },
+      {
+        path: "/school-management/:id",
+        element: <SingleSchool />,
       },
     ],
   },
