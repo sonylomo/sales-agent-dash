@@ -1,9 +1,9 @@
 // import { Menu } from "@/components/Menu";
 import SideBar from "@/components/SideBar";
 import { FaSalesforce } from "react-icons/fa6";
-import { Link, Outlet, useLocation, useParams } from "react-router-dom";
-import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
+import { Outlet, useLocation, useParams } from "react-router-dom";
 import MenuBar from "./MenuBar";
+import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 
 const Layout = () => {
   const location = useLocation();
