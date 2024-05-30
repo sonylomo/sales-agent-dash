@@ -1,0 +1,3925 @@
+{
+  "targetVisuals": {
+    "analytics": [
+      { "name": "Target Achieved", "value": 400 },
+      { "name": "Set Target", "value": 1000 }
+    ],
+    "finance": [
+      { "name": "Target Achieved", "value": 300 },
+      { "name": "Set Target", "value": 1000 }
+    ],
+    "timetable": [
+      { "name": "Target Achieved", "value": 400 },
+      { "name": "Set Target", "value": 1000 }
+    ]
+  },
+  "signUpOverview": [
+    {
+      "name": "Primary",
+      "analytics": 4000,
+      "finance": 2400,
+      "timetable": 1000
+    },
+    {
+      "name": "Secondary",
+      "analytics": 3000,
+      "finance": 1398,
+      "timetable": 2000
+    },
+    {
+      "name": "IGCSE",
+      "analytics": 2000,
+      "finance": 4800,
+      "timetable": 3000
+    }
+  ],
+  "metrics": [
+    [
+      {
+        "title": "Collections",
+        "value": "+2350",
+        "description": "+180.1% from last month"
+      },
+      {
+        "title": "Sign Ups",
+        "value": "+12,234",
+        "description": "+19% from last month"
+      },
+      {
+        "title": "Total Revenue",
+        "value": "$45,231.89",
+        "description": "+20.1% from last month"
+      },
+      {
+        "title": "Bounced Cheques",
+        "value": "+573",
+        "description": "+201 since last hour"
+      }
+    ]
+  ],
+  "upcomingInvoices": [
+    {
+      "school": "Greenwood High School",
+      "amountDue": 1200,
+      "dueDate": "2023-06-15"
+    },
+    {
+      "school": "Sunnydale Elementary",
+      "amountDue": 850,
+      "dueDate": "2024-06-20"
+    },
+    {
+      "school": "Riverdale Academy",
+      "amountDue": 950,
+      "dueDate": "2021-07-01"
+    },
+    {
+      "school": "Mountainview High",
+      "amountDue": 1500,
+      "dueDate": "2024-07-05"
+    },
+    {
+      "school": "Lakeside Middle School",
+      "amountDue": 675,
+      "dueDate": "2024-06-18"
+    },
+    {
+      "school": "Springfield Primary",
+      "amountDue": 725,
+      "dueDate": "2019-06-22"
+    },
+    {
+      "school": "Hilltop High School",
+      "amountDue": 1100,
+      "dueDate": "2024-07-10"
+    },
+    {
+      "school": "Cedarwood Academy",
+      "amountDue": 940,
+      "dueDate": "2024-07-15"
+    },
+    {
+      "school": "Brookfield Elementary",
+      "amountDue": 820,
+      "dueDate": "2024-06-25"
+    },
+    {
+      "school": "Maplewood High",
+      "amountDue": 1300,
+      "dueDate": "2024-07-20"
+    }
+  ],
+
+  "schoolDetails": [
+    {
+      "id": "1",
+      "name": "Greenwood High School",
+      "category": "Secondary",
+      "product": ["Zeraki Finance", "Zeraki Timetable"],
+      "county": "Greenwood County",
+      "registrationDate": "2020-06-15T00:00:00.000Z",
+      "contactInfo": {
+        "phone": "555-1234",
+        "email": "contact@greenwoodhigh.edu"
+      },
+      "balance": 20000,
+      "invoices": [
+        {
+          "id": "INV-001",
+          "invoiceItem": "Software License",
+          "createdAt": "2024-05-15",
+          "dueDate": "2024-06-15",
+          "amount": 1200,
+          "amountPaid": 1200,
+          "amountDue": 0,
+          "status": "completed",
+          "daysUntilDue": 0
+        },
+        {
+          "id": "INV-002",
+          "invoiceItem": "Hardware Purchase",
+          "createdAt": "2023-05-15",
+          "dueDate": "2023-06-15",
+          "amount": 2500,
+          "amountPaid": 1000,
+          "amountDue": 1500,
+          "status": "pending",
+          "daysUntilDue": 10
+        },
+        {
+          "id": "INV-003",
+          "invoiceItem": "Consulting services",
+          "createdAt": "2022-05-15",
+          "dueDate": "2022-06-15",
+          "amount": 800,
+          "amountPaid": 200,
+          "amountDue": 600,
+          "status": "pending",
+          "daysUntilDue": 75
+        },
+        {
+          "id": "INV-004",
+          "invoiceItem": "Cloud Storage",
+          "createdAt": "2021-05-15",
+          "dueDate": "2021-06-15",
+          "amount": 2750,
+          "amountPaid": 2000,
+          "amountDue": 750,
+          "status": "pending",
+          "daysUntilDue": 25
+        },
+        {
+          "id": "INV-005",
+          "invoiceItem": "Software License",
+          "createdAt": "2020-05-15",
+          "dueDate": "2020-06-15",
+          "amount": 1200,
+          "amountPaid": 1200,
+          "amountDue": 0,
+          "status": "completed",
+          "daysUntilDue": 0
+        },
+        {
+          "id": "INV-006",
+          "invoiceItem": "Hardware Purchase",
+          "createdAt": "2019-05-15",
+          "dueDate": "2019-06-15",
+          "amount": 2500,
+          "amountPaid": 1000,
+          "amountDue": 1500,
+          "status": "pending",
+          "daysUntilDue": 10
+        },
+        {
+          "id": "INV-007",
+          "invoiceItem": "Consulting services",
+          "createdAt": "2018-05-15",
+          "dueDate": "2018-06-15",
+          "amount": 800,
+          "amountPaid": 200,
+          "amountDue": 600,
+          "status": "pending",
+          "daysUntilDue": 75
+        },
+        {
+          "id": "INV-008",
+          "invoiceItem": "Cloud Storage",
+          "createdAt": "2017-05-15",
+          "dueDate": "2017-06-15",
+          "amount": 2750,
+          "amountPaid": 2000,
+          "amountDue": 750,
+          "status": "pending",
+          "daysUntilDue": 25
+        },
+        {
+          "id": "INV-009",
+          "invoiceItem": "Software License",
+          "createdAt": "2016-05-15",
+          "dueDate": "2016-06-15",
+          "amount": 1200,
+          "amountPaid": 1200,
+          "amountDue": 0,
+          "status": "completed",
+          "daysUntilDue": 0
+        },
+        {
+          "id": "INV-010",
+          "invoiceItem": "Hardware Purchase",
+          "createdAt": "2015-05-15",
+          "dueDate": "2015-06-15",
+          "amount": 2500,
+          "amountPaid": 1000,
+          "amountDue": 1500,
+          "status": "pending",
+          "daysUntilDue": 10
+        },
+        {
+          "id": "INV-011",
+          "invoiceItem": "Consulting services",
+          "createdAt": "2014-05-15",
+          "dueDate": "2014-06-15",
+          "amount": 800,
+          "amountPaid": 200,
+          "amountDue": 600,
+          "status": "pending",
+          "daysUntilDue": 75
+        },
+        {
+          "id": "INV-012",
+          "invoiceItem": "Cloud Storage",
+          "createdAt": "2013-05-15",
+          "dueDate": "2013-06-15",
+          "amount": 2750,
+          "amountPaid": 2750,
+          "amountDue": 0,
+          "status": "completed",
+          "daysUntilDue": 0
+        }
+      ],
+      "collections": [
+        {
+          "invoiceNumber": "INV-001",
+          "collectionNumber": "COL-001",
+          "collectionDate": "2024-05-20T10:30:00Z",
+          "paidAmount": 1500,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-002",
+          "collectionNumber": "COL-002",
+          "collectionDate": "2024-06-15T14:45:00Z",
+          "paidAmount": 1200,
+          "completionStatus": "pending"
+        },
+        {
+          "invoiceNumber": "INV-003",
+          "collectionNumber": "COL-003",
+          "collectionDate": "2024-06-30T09:00:00Z",
+          "paidAmount": 500,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-004",
+          "collectionNumber": "COL-004",
+          "collectionDate": "2024-07-10T11:15:00Z",
+          "paidAmount": 2000,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-005",
+          "collectionNumber": "COL-005",
+          "collectionDate": "2024-07-25T16:00:00Z",
+          "paidAmount": 750,
+          "completionStatus": "pending"
+        },
+        {
+          "invoiceNumber": "INV-006",
+          "collectionNumber": "COL-006",
+          "collectionDate": "2024-08-05T12:30:00Z",
+          "paidAmount": 1300,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-007",
+          "collectionNumber": "COL-007",
+          "collectionDate": "2024-08-20T08:45:00Z",
+          "paidAmount": 1600,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-008",
+          "collectionNumber": "COL-008",
+          "collectionDate": "2024-09-01T15:00:00Z",
+          "paidAmount": 900,
+          "completionStatus": "pending"
+        },
+        {
+          "invoiceNumber": "INV-009",
+          "collectionNumber": "COL-009",
+          "collectionDate": "2024-09-15T10:15:00Z",
+          "paidAmount": 1100,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-010",
+          "collectionNumber": "COL-010",
+          "collectionDate": "2024-10-01T13:30:00Z",
+          "paidAmount": 1400,
+          "completionStatus": "pending"
+        },
+        {
+          "invoiceNumber": "INV-011",
+          "collectionNumber": "COL-011",
+          "collectionDate": "2024-10-15T09:00:00Z",
+          "paidAmount": 1700,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-012",
+          "collectionNumber": "COL-012",
+          "collectionDate": "2024-11-01T11:45:00Z",
+          "paidAmount": 1900,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-013",
+          "collectionNumber": "COL-013",
+          "collectionDate": "2024-11-15T14:30:00Z",
+          "paidAmount": 1800,
+          "completionStatus": "pending"
+        },
+        {
+          "invoiceNumber": "INV-014",
+          "collectionNumber": "COL-014",
+          "collectionDate": "2024-12-01T10:15:00Z",
+          "paidAmount": 1500,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-015",
+          "collectionNumber": "COL-015",
+          "collectionDate": "2024-12-15T12:45:00Z",
+          "paidAmount": 2000,
+          "completionStatus": "completed"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Sunnydale Elementary",
+      "category": "Primary",
+      "product": ["Zeraki Finance", "Zeraki Timetable"],
+      "county": "Sunnydale County",
+      "registrationDate": "2021-01-20T00:00:00.000Z",
+      "contactInfo": {
+        "phone": "555-5678",
+        "email": "info@sunnydaleelem.edu"
+      },
+      "balance": 1500,
+      "invoices": [
+        {
+          "id": "INV-001",
+          "invoiceItem": "Software License",
+          "createdAt": "2024-05-15",
+          "dueDate": "2024-06-15",
+          "amount": 1200,
+          "amountPaid": 1200,
+          "amountDue": 0,
+          "status": "completed",
+          "daysUntilDue": 0
+        },
+        {
+          "id": "INV-002",
+          "invoiceItem": "Hardware Purchase",
+          "createdAt": "2023-05-15",
+          "dueDate": "2023-06-15",
+          "amount": 2500,
+          "amountPaid": 1000,
+          "amountDue": 1500,
+          "status": "pending",
+          "daysUntilDue": 10
+        },
+        {
+          "id": "INV-003",
+          "invoiceItem": "Consulting services",
+          "createdAt": "2022-05-15",
+          "dueDate": "2022-06-15",
+          "amount": 800,
+          "amountPaid": 200,
+          "amountDue": 600,
+          "status": "pending",
+          "daysUntilDue": 75
+        },
+        {
+          "id": "INV-004",
+          "invoiceItem": "Cloud Storage",
+          "createdAt": "2021-05-15",
+          "dueDate": "2021-06-15",
+          "amount": 2750,
+          "amountPaid": 2000,
+          "amountDue": 750,
+          "status": "pending",
+          "daysUntilDue": 25
+        },
+        {
+          "id": "INV-005",
+          "invoiceItem": "Software License",
+          "createdAt": "2020-05-15",
+          "dueDate": "2020-06-15",
+          "amount": 1200,
+          "amountPaid": 1200,
+          "amountDue": 0,
+          "status": "completed",
+          "daysUntilDue": 0
+        },
+        {
+          "id": "INV-006",
+          "invoiceItem": "Hardware Purchase",
+          "createdAt": "2019-05-15",
+          "dueDate": "2019-06-15",
+          "amount": 2500,
+          "amountPaid": 1000,
+          "amountDue": 1500,
+          "status": "pending",
+          "daysUntilDue": 10
+        },
+        {
+          "id": "INV-007",
+          "invoiceItem": "Consulting services",
+          "createdAt": "2018-05-15",
+          "dueDate": "2018-06-15",
+          "amount": 800,
+          "amountPaid": 200,
+          "amountDue": 600,
+          "status": "pending",
+          "daysUntilDue": 75
+        },
+        {
+          "id": "INV-008",
+          "invoiceItem": "Cloud Storage",
+          "createdAt": "2017-05-15",
+          "dueDate": "2017-06-15",
+          "amount": 2750,
+          "amountPaid": 2000,
+          "amountDue": 750,
+          "status": "pending",
+          "daysUntilDue": 25
+        },
+        {
+          "id": "INV-009",
+          "invoiceItem": "Software License",
+          "createdAt": "2016-05-15",
+          "dueDate": "2016-06-15",
+          "amount": 1200,
+          "amountPaid": 1200,
+          "amountDue": 0,
+          "status": "completed",
+          "daysUntilDue": 0
+        },
+        {
+          "id": "INV-010",
+          "invoiceItem": "Hardware Purchase",
+          "createdAt": "2015-05-15",
+          "dueDate": "2015-06-15",
+          "amount": 2500,
+          "amountPaid": 1000,
+          "amountDue": 1500,
+          "status": "pending",
+          "daysUntilDue": 10
+        },
+        {
+          "id": "INV-011",
+          "invoiceItem": "Consulting services",
+          "createdAt": "2014-05-15",
+          "dueDate": "2014-06-15",
+          "amount": 800,
+          "amountPaid": 200,
+          "amountDue": 600,
+          "status": "pending",
+          "daysUntilDue": 75
+        },
+        {
+          "id": "INV-012",
+          "invoiceItem": "Cloud Storage",
+          "createdAt": "2013-05-15",
+          "dueDate": "2013-06-15",
+          "amount": 2750,
+          "amountPaid": 2750,
+          "amountDue": 0,
+          "status": "completed",
+          "daysUntilDue": 0
+        }
+      ],
+      "collections": [
+        {
+          "invoiceNumber": "INV-001",
+          "collectionNumber": "COL-001",
+          "collectionDate": "2024-05-20T10:30:00Z",
+          "paidAmount": 1500,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-002",
+          "collectionNumber": "COL-002",
+          "collectionDate": "2024-06-15T14:45:00Z",
+          "paidAmount": 1200,
+          "completionStatus": "pending"
+        },
+        {
+          "invoiceNumber": "INV-003",
+          "collectionNumber": "COL-003",
+          "collectionDate": "2024-06-30T09:00:00Z",
+          "paidAmount": 500,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-004",
+          "collectionNumber": "COL-004",
+          "collectionDate": "2024-07-10T11:15:00Z",
+          "paidAmount": 2000,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-005",
+          "collectionNumber": "COL-005",
+          "collectionDate": "2024-07-25T16:00:00Z",
+          "paidAmount": 750,
+          "completionStatus": "pending"
+        },
+        {
+          "invoiceNumber": "INV-006",
+          "collectionNumber": "COL-006",
+          "collectionDate": "2024-08-05T12:30:00Z",
+          "paidAmount": 1300,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-007",
+          "collectionNumber": "COL-007",
+          "collectionDate": "2024-08-20T08:45:00Z",
+          "paidAmount": 1600,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-008",
+          "collectionNumber": "COL-008",
+          "collectionDate": "2024-09-01T15:00:00Z",
+          "paidAmount": 900,
+          "completionStatus": "pending"
+        },
+        {
+          "invoiceNumber": "INV-009",
+          "collectionNumber": "COL-009",
+          "collectionDate": "2024-09-15T10:15:00Z",
+          "paidAmount": 1100,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-010",
+          "collectionNumber": "COL-010",
+          "collectionDate": "2024-10-01T13:30:00Z",
+          "paidAmount": 1400,
+          "completionStatus": "pending"
+        },
+        {
+          "invoiceNumber": "INV-011",
+          "collectionNumber": "COL-011",
+          "collectionDate": "2024-10-15T09:00:00Z",
+          "paidAmount": 1700,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-012",
+          "collectionNumber": "COL-012",
+          "collectionDate": "2024-11-01T11:45:00Z",
+          "paidAmount": 1900,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-013",
+          "collectionNumber": "COL-013",
+          "collectionDate": "2024-11-15T14:30:00Z",
+          "paidAmount": 1800,
+          "completionStatus": "pending"
+        },
+        {
+          "invoiceNumber": "INV-014",
+          "collectionNumber": "COL-014",
+          "collectionDate": "2024-12-01T10:15:00Z",
+          "paidAmount": 1500,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-015",
+          "collectionNumber": "COL-015",
+          "collectionDate": "2024-12-15T12:45:00Z",
+          "paidAmount": 2000,
+          "completionStatus": "completed"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Riverdale Academy",
+      "category": "IGCSE",
+      "product": ["Zeraki Analytics", "Zeraki Timetable"],
+      "county": "Riverdale County",
+      "registrationDate": "2019-07-01T00:00:00.000Z",
+      "contactInfo": {
+        "phone": "555-8765",
+        "email": "contact@riverdaleacademy.edu"
+      },
+      "balance": 800,
+      "invoices": [
+        {
+          "id": "INV-001",
+          "invoiceItem": "Software License",
+          "createdAt": "2024-05-15",
+          "dueDate": "2024-06-15",
+          "amount": 1200,
+          "amountPaid": 1200,
+          "amountDue": 0,
+          "status": "completed",
+          "daysUntilDue": 0
+        },
+        {
+          "id": "INV-002",
+          "invoiceItem": "Hardware Purchase",
+          "createdAt": "2023-05-15",
+          "dueDate": "2023-06-15",
+          "amount": 2500,
+          "amountPaid": 1000,
+          "amountDue": 1500,
+          "status": "pending",
+          "daysUntilDue": 10
+        },
+        {
+          "id": "INV-003",
+          "invoiceItem": "Consulting services",
+          "createdAt": "2022-05-15",
+          "dueDate": "2022-06-15",
+          "amount": 800,
+          "amountPaid": 200,
+          "amountDue": 600,
+          "status": "pending",
+          "daysUntilDue": 75
+        },
+        {
+          "id": "INV-004",
+          "invoiceItem": "Cloud Storage",
+          "createdAt": "2021-05-15",
+          "dueDate": "2021-06-15",
+          "amount": 2750,
+          "amountPaid": 2000,
+          "amountDue": 750,
+          "status": "pending",
+          "daysUntilDue": 25
+        },
+        {
+          "id": "INV-005",
+          "invoiceItem": "Software License",
+          "createdAt": "2020-05-15",
+          "dueDate": "2020-06-15",
+          "amount": 1200,
+          "amountPaid": 1200,
+          "amountDue": 0,
+          "status": "completed",
+          "daysUntilDue": 0
+        },
+        {
+          "id": "INV-006",
+          "invoiceItem": "Hardware Purchase",
+          "createdAt": "2019-05-15",
+          "dueDate": "2019-06-15",
+          "amount": 2500,
+          "amountPaid": 1000,
+          "amountDue": 1500,
+          "status": "pending",
+          "daysUntilDue": 10
+        },
+        {
+          "id": "INV-007",
+          "invoiceItem": "Consulting services",
+          "createdAt": "2018-05-15",
+          "dueDate": "2018-06-15",
+          "amount": 800,
+          "amountPaid": 200,
+          "amountDue": 600,
+          "status": "pending",
+          "daysUntilDue": 75
+        },
+        {
+          "id": "INV-008",
+          "invoiceItem": "Cloud Storage",
+          "createdAt": "2017-05-15",
+          "dueDate": "2017-06-15",
+          "amount": 2750,
+          "amountPaid": 2000,
+          "amountDue": 750,
+          "status": "pending",
+          "daysUntilDue": 25
+        },
+        {
+          "id": "INV-009",
+          "invoiceItem": "Software License",
+          "createdAt": "2016-05-15",
+          "dueDate": "2016-06-15",
+          "amount": 1200,
+          "amountPaid": 1200,
+          "amountDue": 0,
+          "status": "completed",
+          "daysUntilDue": 0
+        },
+        {
+          "id": "INV-010",
+          "invoiceItem": "Hardware Purchase",
+          "createdAt": "2015-05-15",
+          "dueDate": "2015-06-15",
+          "amount": 2500,
+          "amountPaid": 1000,
+          "amountDue": 1500,
+          "status": "pending",
+          "daysUntilDue": 10
+        },
+        {
+          "id": "INV-011",
+          "invoiceItem": "Consulting services",
+          "createdAt": "2014-05-15",
+          "dueDate": "2014-06-15",
+          "amount": 800,
+          "amountPaid": 200,
+          "amountDue": 600,
+          "status": "pending",
+          "daysUntilDue": 75
+        },
+        {
+          "id": "INV-012",
+          "invoiceItem": "Cloud Storage",
+          "createdAt": "2013-05-15",
+          "dueDate": "2013-06-15",
+          "amount": 2750,
+          "amountPaid": 2750,
+          "amountDue": 0,
+          "status": "completed",
+          "daysUntilDue": 0
+        }
+      ],
+      "collections": [
+        {
+          "invoiceNumber": "INV-001",
+          "collectionNumber": "COL-001",
+          "collectionDate": "2024-05-20T10:30:00Z",
+          "paidAmount": 1500,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-002",
+          "collectionNumber": "COL-002",
+          "collectionDate": "2024-06-15T14:45:00Z",
+          "paidAmount": 1200,
+          "completionStatus": "pending"
+        },
+        {
+          "invoiceNumber": "INV-003",
+          "collectionNumber": "COL-003",
+          "collectionDate": "2024-06-30T09:00:00Z",
+          "paidAmount": 500,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-004",
+          "collectionNumber": "COL-004",
+          "collectionDate": "2024-07-10T11:15:00Z",
+          "paidAmount": 2000,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-005",
+          "collectionNumber": "COL-005",
+          "collectionDate": "2024-07-25T16:00:00Z",
+          "paidAmount": 750,
+          "completionStatus": "pending"
+        },
+        {
+          "invoiceNumber": "INV-006",
+          "collectionNumber": "COL-006",
+          "collectionDate": "2024-08-05T12:30:00Z",
+          "paidAmount": 1300,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-007",
+          "collectionNumber": "COL-007",
+          "collectionDate": "2024-08-20T08:45:00Z",
+          "paidAmount": 1600,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-008",
+          "collectionNumber": "COL-008",
+          "collectionDate": "2024-09-01T15:00:00Z",
+          "paidAmount": 900,
+          "completionStatus": "pending"
+        },
+        {
+          "invoiceNumber": "INV-009",
+          "collectionNumber": "COL-009",
+          "collectionDate": "2024-09-15T10:15:00Z",
+          "paidAmount": 1100,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-010",
+          "collectionNumber": "COL-010",
+          "collectionDate": "2024-10-01T13:30:00Z",
+          "paidAmount": 1400,
+          "completionStatus": "pending"
+        },
+        {
+          "invoiceNumber": "INV-011",
+          "collectionNumber": "COL-011",
+          "collectionDate": "2024-10-15T09:00:00Z",
+          "paidAmount": 1700,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-012",
+          "collectionNumber": "COL-012",
+          "collectionDate": "2024-11-01T11:45:00Z",
+          "paidAmount": 1900,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-013",
+          "collectionNumber": "COL-013",
+          "collectionDate": "2024-11-15T14:30:00Z",
+          "paidAmount": 1800,
+          "completionStatus": "pending"
+        },
+        {
+          "invoiceNumber": "INV-014",
+          "collectionNumber": "COL-014",
+          "collectionDate": "2024-12-01T10:15:00Z",
+          "paidAmount": 1500,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-015",
+          "collectionNumber": "COL-015",
+          "collectionDate": "2024-12-15T12:45:00Z",
+          "paidAmount": 2000,
+          "completionStatus": "completed"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Mountainview High",
+      "category": "Secondary",
+      "product": ["Zeraki Finance", "Zeraki Timetable"],
+      "county": "Mountainview County",
+      "registrationDate": "2018-07-05T00:00:00.000Z",
+      "contactInfo": {
+        "phone": "555-4321",
+        "email": "info@mountainviewhigh.edu"
+      },
+      "balance": 2400,
+      "invoices": [
+        {
+          "id": "INV-001",
+          "invoiceItem": "Software License",
+          "createdAt": "2024-05-15",
+          "dueDate": "2024-06-15",
+          "amount": 1200,
+          "amountPaid": 1200,
+          "amountDue": 0,
+          "status": "completed",
+          "daysUntilDue": 0
+        },
+        {
+          "id": "INV-002",
+          "invoiceItem": "Hardware Purchase",
+          "createdAt": "2023-05-15",
+          "dueDate": "2023-06-15",
+          "amount": 2500,
+          "amountPaid": 1000,
+          "amountDue": 1500,
+          "status": "pending",
+          "daysUntilDue": 10
+        },
+        {
+          "id": "INV-003",
+          "invoiceItem": "Consulting services",
+          "createdAt": "2022-05-15",
+          "dueDate": "2022-06-15",
+          "amount": 800,
+          "amountPaid": 200,
+          "amountDue": 600,
+          "status": "pending",
+          "daysUntilDue": 75
+        },
+        {
+          "id": "INV-004",
+          "invoiceItem": "Cloud Storage",
+          "createdAt": "2021-05-15",
+          "dueDate": "2021-06-15",
+          "amount": 2750,
+          "amountPaid": 2000,
+          "amountDue": 750,
+          "status": "pending",
+          "daysUntilDue": 25
+        },
+        {
+          "id": "INV-005",
+          "invoiceItem": "Software License",
+          "createdAt": "2020-05-15",
+          "dueDate": "2020-06-15",
+          "amount": 1200,
+          "amountPaid": 1200,
+          "amountDue": 0,
+          "status": "completed",
+          "daysUntilDue": 0
+        },
+        {
+          "id": "INV-006",
+          "invoiceItem": "Hardware Purchase",
+          "createdAt": "2019-05-15",
+          "dueDate": "2019-06-15",
+          "amount": 2500,
+          "amountPaid": 1000,
+          "amountDue": 1500,
+          "status": "pending",
+          "daysUntilDue": 10
+        },
+        {
+          "id": "INV-007",
+          "invoiceItem": "Consulting services",
+          "createdAt": "2018-05-15",
+          "dueDate": "2018-06-15",
+          "amount": 800,
+          "amountPaid": 200,
+          "amountDue": 600,
+          "status": "pending",
+          "daysUntilDue": 75
+        },
+        {
+          "id": "INV-008",
+          "invoiceItem": "Cloud Storage",
+          "createdAt": "2017-05-15",
+          "dueDate": "2017-06-15",
+          "amount": 2750,
+          "amountPaid": 2000,
+          "amountDue": 750,
+          "status": "pending",
+          "daysUntilDue": 25
+        },
+        {
+          "id": "INV-009",
+          "invoiceItem": "Software License",
+          "createdAt": "2016-05-15",
+          "dueDate": "2016-06-15",
+          "amount": 1200,
+          "amountPaid": 1200,
+          "amountDue": 0,
+          "status": "completed",
+          "daysUntilDue": 0
+        },
+        {
+          "id": "INV-010",
+          "invoiceItem": "Hardware Purchase",
+          "createdAt": "2015-05-15",
+          "dueDate": "2015-06-15",
+          "amount": 2500,
+          "amountPaid": 1000,
+          "amountDue": 1500,
+          "status": "pending",
+          "daysUntilDue": 10
+        },
+        {
+          "id": "INV-011",
+          "invoiceItem": "Consulting services",
+          "createdAt": "2014-05-15",
+          "dueDate": "2014-06-15",
+          "amount": 800,
+          "amountPaid": 200,
+          "amountDue": 600,
+          "status": "pending",
+          "daysUntilDue": 75
+        },
+        {
+          "id": "INV-012",
+          "invoiceItem": "Cloud Storage",
+          "createdAt": "2013-05-15",
+          "dueDate": "2013-06-15",
+          "amount": 2750,
+          "amountPaid": 2750,
+          "amountDue": 0,
+          "status": "completed",
+          "daysUntilDue": 0
+        }
+      ],
+      "collections": [
+        {
+          "invoiceNumber": "INV-001",
+          "collectionNumber": "COL-001",
+          "collectionDate": "2024-05-20T10:30:00Z",
+          "paidAmount": 1500,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-002",
+          "collectionNumber": "COL-002",
+          "collectionDate": "2024-06-15T14:45:00Z",
+          "paidAmount": 1200,
+          "completionStatus": "pending"
+        },
+        {
+          "invoiceNumber": "INV-003",
+          "collectionNumber": "COL-003",
+          "collectionDate": "2024-06-30T09:00:00Z",
+          "paidAmount": 500,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-004",
+          "collectionNumber": "COL-004",
+          "collectionDate": "2024-07-10T11:15:00Z",
+          "paidAmount": 2000,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-005",
+          "collectionNumber": "COL-005",
+          "collectionDate": "2024-07-25T16:00:00Z",
+          "paidAmount": 750,
+          "completionStatus": "pending"
+        },
+        {
+          "invoiceNumber": "INV-006",
+          "collectionNumber": "COL-006",
+          "collectionDate": "2024-08-05T12:30:00Z",
+          "paidAmount": 1300,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-007",
+          "collectionNumber": "COL-007",
+          "collectionDate": "2024-08-20T08:45:00Z",
+          "paidAmount": 1600,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-008",
+          "collectionNumber": "COL-008",
+          "collectionDate": "2024-09-01T15:00:00Z",
+          "paidAmount": 900,
+          "completionStatus": "pending"
+        },
+        {
+          "invoiceNumber": "INV-009",
+          "collectionNumber": "COL-009",
+          "collectionDate": "2024-09-15T10:15:00Z",
+          "paidAmount": 1100,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-010",
+          "collectionNumber": "COL-010",
+          "collectionDate": "2024-10-01T13:30:00Z",
+          "paidAmount": 1400,
+          "completionStatus": "pending"
+        },
+        {
+          "invoiceNumber": "INV-011",
+          "collectionNumber": "COL-011",
+          "collectionDate": "2024-10-15T09:00:00Z",
+          "paidAmount": 1700,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-012",
+          "collectionNumber": "COL-012",
+          "collectionDate": "2024-11-01T11:45:00Z",
+          "paidAmount": 1900,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-013",
+          "collectionNumber": "COL-013",
+          "collectionDate": "2024-11-15T14:30:00Z",
+          "paidAmount": 1800,
+          "completionStatus": "pending"
+        },
+        {
+          "invoiceNumber": "INV-014",
+          "collectionNumber": "COL-014",
+          "collectionDate": "2024-12-01T10:15:00Z",
+          "paidAmount": 1500,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-015",
+          "collectionNumber": "COL-015",
+          "collectionDate": "2024-12-15T12:45:00Z",
+          "paidAmount": 2000,
+          "completionStatus": "completed"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Lakeside Middle School",
+      "category": "Secondary",
+      "product": ["Zeraki Analytics", "Zeraki Timetable", "Zeraki Finance"],
+      "county": "Lakeside County",
+      "registrationDate": "2021-06-18T00:00:00.000Z",
+      "contactInfo": {
+        "phone": "555-7890",
+        "email": "contact@lakesidemiddle.edu"
+      },
+      "balance": 200,
+      "invoices": [
+        {
+          "id": "INV-001",
+          "invoiceItem": "Software License",
+          "createdAt": "2024-05-15",
+          "dueDate": "2024-06-15",
+          "amount": 1200,
+          "amountPaid": 1200,
+          "amountDue": 0,
+          "status": "completed",
+          "daysUntilDue": 0
+        },
+        {
+          "id": "INV-002",
+          "invoiceItem": "Hardware Purchase",
+          "createdAt": "2023-05-15",
+          "dueDate": "2023-06-15",
+          "amount": 2500,
+          "amountPaid": 1000,
+          "amountDue": 1500,
+          "status": "pending",
+          "daysUntilDue": 10
+        },
+        {
+          "id": "INV-003",
+          "invoiceItem": "Consulting services",
+          "createdAt": "2022-05-15",
+          "dueDate": "2022-06-15",
+          "amount": 800,
+          "amountPaid": 200,
+          "amountDue": 600,
+          "status": "pending",
+          "daysUntilDue": 75
+        },
+        {
+          "id": "INV-004",
+          "invoiceItem": "Cloud Storage",
+          "createdAt": "2021-05-15",
+          "dueDate": "2021-06-15",
+          "amount": 2750,
+          "amountPaid": 2000,
+          "amountDue": 750,
+          "status": "pending",
+          "daysUntilDue": 25
+        },
+        {
+          "id": "INV-005",
+          "invoiceItem": "Software License",
+          "createdAt": "2020-05-15",
+          "dueDate": "2020-06-15",
+          "amount": 1200,
+          "amountPaid": 1200,
+          "amountDue": 0,
+          "status": "completed",
+          "daysUntilDue": 0
+        },
+        {
+          "id": "INV-006",
+          "invoiceItem": "Hardware Purchase",
+          "createdAt": "2019-05-15",
+          "dueDate": "2019-06-15",
+          "amount": 2500,
+          "amountPaid": 1000,
+          "amountDue": 1500,
+          "status": "pending",
+          "daysUntilDue": 10
+        },
+        {
+          "id": "INV-007",
+          "invoiceItem": "Consulting services",
+          "createdAt": "2018-05-15",
+          "dueDate": "2018-06-15",
+          "amount": 800,
+          "amountPaid": 200,
+          "amountDue": 600,
+          "status": "pending",
+          "daysUntilDue": 75
+        },
+        {
+          "id": "INV-008",
+          "invoiceItem": "Cloud Storage",
+          "createdAt": "2017-05-15",
+          "dueDate": "2017-06-15",
+          "amount": 2750,
+          "amountPaid": 2000,
+          "amountDue": 750,
+          "status": "pending",
+          "daysUntilDue": 25
+        },
+        {
+          "id": "INV-009",
+          "invoiceItem": "Software License",
+          "createdAt": "2016-05-15",
+          "dueDate": "2016-06-15",
+          "amount": 1200,
+          "amountPaid": 1200,
+          "amountDue": 0,
+          "status": "completed",
+          "daysUntilDue": 0
+        },
+        {
+          "id": "INV-010",
+          "invoiceItem": "Hardware Purchase",
+          "createdAt": "2015-05-15",
+          "dueDate": "2015-06-15",
+          "amount": 2500,
+          "amountPaid": 1000,
+          "amountDue": 1500,
+          "status": "pending",
+          "daysUntilDue": 10
+        },
+        {
+          "id": "INV-011",
+          "invoiceItem": "Consulting services",
+          "createdAt": "2014-05-15",
+          "dueDate": "2014-06-15",
+          "amount": 800,
+          "amountPaid": 200,
+          "amountDue": 600,
+          "status": "pending",
+          "daysUntilDue": 75
+        },
+        {
+          "id": "INV-012",
+          "invoiceItem": "Cloud Storage",
+          "createdAt": "2013-05-15",
+          "dueDate": "2013-06-15",
+          "amount": 2750,
+          "amountPaid": 2750,
+          "amountDue": 0,
+          "status": "completed",
+          "daysUntilDue": 0
+        }
+      ],
+      "collections": [
+        {
+          "invoiceNumber": "INV-001",
+          "collectionNumber": "COL-001",
+          "collectionDate": "2024-05-20T10:30:00Z",
+          "paidAmount": 1500,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-002",
+          "collectionNumber": "COL-002",
+          "collectionDate": "2024-06-15T14:45:00Z",
+          "paidAmount": 1200,
+          "completionStatus": "pending"
+        },
+        {
+          "invoiceNumber": "INV-003",
+          "collectionNumber": "COL-003",
+          "collectionDate": "2024-06-30T09:00:00Z",
+          "paidAmount": 500,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-004",
+          "collectionNumber": "COL-004",
+          "collectionDate": "2024-07-10T11:15:00Z",
+          "paidAmount": 2000,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-005",
+          "collectionNumber": "COL-005",
+          "collectionDate": "2024-07-25T16:00:00Z",
+          "paidAmount": 750,
+          "completionStatus": "pending"
+        },
+        {
+          "invoiceNumber": "INV-006",
+          "collectionNumber": "COL-006",
+          "collectionDate": "2024-08-05T12:30:00Z",
+          "paidAmount": 1300,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-007",
+          "collectionNumber": "COL-007",
+          "collectionDate": "2024-08-20T08:45:00Z",
+          "paidAmount": 1600,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-008",
+          "collectionNumber": "COL-008",
+          "collectionDate": "2024-09-01T15:00:00Z",
+          "paidAmount": 900,
+          "completionStatus": "pending"
+        },
+        {
+          "invoiceNumber": "INV-009",
+          "collectionNumber": "COL-009",
+          "collectionDate": "2024-09-15T10:15:00Z",
+          "paidAmount": 1100,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-010",
+          "collectionNumber": "COL-010",
+          "collectionDate": "2024-10-01T13:30:00Z",
+          "paidAmount": 1400,
+          "completionStatus": "pending"
+        },
+        {
+          "invoiceNumber": "INV-011",
+          "collectionNumber": "COL-011",
+          "collectionDate": "2024-10-15T09:00:00Z",
+          "paidAmount": 1700,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-012",
+          "collectionNumber": "COL-012",
+          "collectionDate": "2024-11-01T11:45:00Z",
+          "paidAmount": 1900,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-013",
+          "collectionNumber": "COL-013",
+          "collectionDate": "2024-11-15T14:30:00Z",
+          "paidAmount": 1800,
+          "completionStatus": "pending"
+        },
+        {
+          "invoiceNumber": "INV-014",
+          "collectionNumber": "COL-014",
+          "collectionDate": "2024-12-01T10:15:00Z",
+          "paidAmount": 1500,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-015",
+          "collectionNumber": "COL-015",
+          "collectionDate": "2024-12-15T12:45:00Z",
+          "paidAmount": 2000,
+          "completionStatus": "completed"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Springfield Primary",
+      "category": "Primary",
+      "product": ["Zeraki Finance"],
+      "county": "Springfield County",
+      "registrationDate": "2020-06-22T00:00:00.000Z",
+      "contactInfo": {
+        "phone": "555-2345",
+        "email": "info@springfieldprimary.edu"
+      },
+      "balance": 6200,
+      "invoices": [
+        {
+          "id": "INV-001",
+          "invoiceItem": "Software License",
+          "createdAt": "2024-05-15",
+          "dueDate": "2024-06-15",
+          "amount": 1200,
+          "amountPaid": 1200,
+          "amountDue": 0,
+          "status": "completed",
+          "daysUntilDue": 0
+        },
+        {
+          "id": "INV-002",
+          "invoiceItem": "Hardware Purchase",
+          "createdAt": "2023-05-15",
+          "dueDate": "2023-06-15",
+          "amount": 2500,
+          "amountPaid": 1000,
+          "amountDue": 1500,
+          "status": "pending",
+          "daysUntilDue": 10
+        },
+        {
+          "id": "INV-003",
+          "invoiceItem": "Consulting services",
+          "createdAt": "2022-05-15",
+          "dueDate": "2022-06-15",
+          "amount": 800,
+          "amountPaid": 200,
+          "amountDue": 600,
+          "status": "pending",
+          "daysUntilDue": 75
+        },
+        {
+          "id": "INV-004",
+          "invoiceItem": "Cloud Storage",
+          "createdAt": "2021-05-15",
+          "dueDate": "2021-06-15",
+          "amount": 2750,
+          "amountPaid": 2000,
+          "amountDue": 750,
+          "status": "pending",
+          "daysUntilDue": 25
+        },
+        {
+          "id": "INV-005",
+          "invoiceItem": "Software License",
+          "createdAt": "2020-05-15",
+          "dueDate": "2020-06-15",
+          "amount": 1200,
+          "amountPaid": 1200,
+          "amountDue": 0,
+          "status": "completed",
+          "daysUntilDue": 0
+        },
+        {
+          "id": "INV-006",
+          "invoiceItem": "Hardware Purchase",
+          "createdAt": "2019-05-15",
+          "dueDate": "2019-06-15",
+          "amount": 2500,
+          "amountPaid": 1000,
+          "amountDue": 1500,
+          "status": "pending",
+          "daysUntilDue": 10
+        },
+        {
+          "id": "INV-007",
+          "invoiceItem": "Consulting services",
+          "createdAt": "2018-05-15",
+          "dueDate": "2018-06-15",
+          "amount": 800,
+          "amountPaid": 200,
+          "amountDue": 600,
+          "status": "pending",
+          "daysUntilDue": 75
+        },
+        {
+          "id": "INV-008",
+          "invoiceItem": "Cloud Storage",
+          "createdAt": "2017-05-15",
+          "dueDate": "2017-06-15",
+          "amount": 2750,
+          "amountPaid": 2000,
+          "amountDue": 750,
+          "status": "pending",
+          "daysUntilDue": 25
+        },
+        {
+          "id": "INV-009",
+          "invoiceItem": "Software License",
+          "createdAt": "2016-05-15",
+          "dueDate": "2016-06-15",
+          "amount": 1200,
+          "amountPaid": 1200,
+          "amountDue": 0,
+          "status": "completed",
+          "daysUntilDue": 0
+        },
+        {
+          "id": "INV-010",
+          "invoiceItem": "Hardware Purchase",
+          "createdAt": "2015-05-15",
+          "dueDate": "2015-06-15",
+          "amount": 2500,
+          "amountPaid": 1000,
+          "amountDue": 1500,
+          "status": "pending",
+          "daysUntilDue": 10
+        },
+        {
+          "id": "INV-011",
+          "invoiceItem": "Consulting services",
+          "createdAt": "2014-05-15",
+          "dueDate": "2014-06-15",
+          "amount": 800,
+          "amountPaid": 200,
+          "amountDue": 600,
+          "status": "pending",
+          "daysUntilDue": 75
+        },
+        {
+          "id": "INV-012",
+          "invoiceItem": "Cloud Storage",
+          "createdAt": "2013-05-15",
+          "dueDate": "2013-06-15",
+          "amount": 2750,
+          "amountPaid": 2750,
+          "amountDue": 0,
+          "status": "completed",
+          "daysUntilDue": 0
+        }
+      ],
+      "collections": [
+        {
+          "invoiceNumber": "INV-001",
+          "collectionNumber": "COL-001",
+          "collectionDate": "2024-05-20T10:30:00Z",
+          "paidAmount": 1500,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-002",
+          "collectionNumber": "COL-002",
+          "collectionDate": "2024-06-15T14:45:00Z",
+          "paidAmount": 1200,
+          "completionStatus": "pending"
+        },
+        {
+          "invoiceNumber": "INV-003",
+          "collectionNumber": "COL-003",
+          "collectionDate": "2024-06-30T09:00:00Z",
+          "paidAmount": 500,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-004",
+          "collectionNumber": "COL-004",
+          "collectionDate": "2024-07-10T11:15:00Z",
+          "paidAmount": 2000,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-005",
+          "collectionNumber": "COL-005",
+          "collectionDate": "2024-07-25T16:00:00Z",
+          "paidAmount": 750,
+          "completionStatus": "pending"
+        },
+        {
+          "invoiceNumber": "INV-006",
+          "collectionNumber": "COL-006",
+          "collectionDate": "2024-08-05T12:30:00Z",
+          "paidAmount": 1300,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-007",
+          "collectionNumber": "COL-007",
+          "collectionDate": "2024-08-20T08:45:00Z",
+          "paidAmount": 1600,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-008",
+          "collectionNumber": "COL-008",
+          "collectionDate": "2024-09-01T15:00:00Z",
+          "paidAmount": 900,
+          "completionStatus": "pending"
+        },
+        {
+          "invoiceNumber": "INV-009",
+          "collectionNumber": "COL-009",
+          "collectionDate": "2024-09-15T10:15:00Z",
+          "paidAmount": 1100,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-010",
+          "collectionNumber": "COL-010",
+          "collectionDate": "2024-10-01T13:30:00Z",
+          "paidAmount": 1400,
+          "completionStatus": "pending"
+        },
+        {
+          "invoiceNumber": "INV-011",
+          "collectionNumber": "COL-011",
+          "collectionDate": "2024-10-15T09:00:00Z",
+          "paidAmount": 1700,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-012",
+          "collectionNumber": "COL-012",
+          "collectionDate": "2024-11-01T11:45:00Z",
+          "paidAmount": 1900,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-013",
+          "collectionNumber": "COL-013",
+          "collectionDate": "2024-11-15T14:30:00Z",
+          "paidAmount": 1800,
+          "completionStatus": "pending"
+        },
+        {
+          "invoiceNumber": "INV-014",
+          "collectionNumber": "COL-014",
+          "collectionDate": "2024-12-01T10:15:00Z",
+          "paidAmount": 1500,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-015",
+          "collectionNumber": "COL-015",
+          "collectionDate": "2024-12-15T12:45:00Z",
+          "paidAmount": 2000,
+          "completionStatus": "completed"
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "name": "Hilltop High School",
+      "category": "Secondary",
+      "product": ["Zeraki Timetable", "Zeraki Finance", "Zeraki Analytics"],
+      "county": "Hilltop County",
+      "registrationDate": "2019-07-10T00:00:00.000Z",
+      "contactInfo": {
+        "phone": "555-6543",
+        "email": "contact@hilltophigh.edu"
+      },
+      "balance": 5620,
+      "invoices": [
+        {
+          "id": "INV-001",
+          "invoiceItem": "Software License",
+          "createdAt": "2024-05-15",
+          "dueDate": "2024-06-15",
+          "amount": 1200,
+          "amountPaid": 1200,
+          "amountDue": 0,
+          "status": "completed",
+          "daysUntilDue": 0
+        },
+        {
+          "id": "INV-002",
+          "invoiceItem": "Hardware Purchase",
+          "createdAt": "2023-05-15",
+          "dueDate": "2023-06-15",
+          "amount": 2500,
+          "amountPaid": 1000,
+          "amountDue": 1500,
+          "status": "pending",
+          "daysUntilDue": 10
+        },
+        {
+          "id": "INV-003",
+          "invoiceItem": "Consulting services",
+          "createdAt": "2022-05-15",
+          "dueDate": "2022-06-15",
+          "amount": 800,
+          "amountPaid": 200,
+          "amountDue": 600,
+          "status": "pending",
+          "daysUntilDue": 75
+        },
+        {
+          "id": "INV-004",
+          "invoiceItem": "Cloud Storage",
+          "createdAt": "2021-05-15",
+          "dueDate": "2021-06-15",
+          "amount": 2750,
+          "amountPaid": 2000,
+          "amountDue": 750,
+          "status": "pending",
+          "daysUntilDue": 25
+        },
+        {
+          "id": "INV-005",
+          "invoiceItem": "Software License",
+          "createdAt": "2020-05-15",
+          "dueDate": "2020-06-15",
+          "amount": 1200,
+          "amountPaid": 1200,
+          "amountDue": 0,
+          "status": "completed",
+          "daysUntilDue": 0
+        },
+        {
+          "id": "INV-006",
+          "invoiceItem": "Hardware Purchase",
+          "createdAt": "2019-05-15",
+          "dueDate": "2019-06-15",
+          "amount": 2500,
+          "amountPaid": 1000,
+          "amountDue": 1500,
+          "status": "pending",
+          "daysUntilDue": 10
+        },
+        {
+          "id": "INV-007",
+          "invoiceItem": "Consulting services",
+          "createdAt": "2018-05-15",
+          "dueDate": "2018-06-15",
+          "amount": 800,
+          "amountPaid": 200,
+          "amountDue": 600,
+          "status": "pending",
+          "daysUntilDue": 75
+        },
+        {
+          "id": "INV-008",
+          "invoiceItem": "Cloud Storage",
+          "createdAt": "2017-05-15",
+          "dueDate": "2017-06-15",
+          "amount": 2750,
+          "amountPaid": 2000,
+          "amountDue": 750,
+          "status": "pending",
+          "daysUntilDue": 25
+        },
+        {
+          "id": "INV-009",
+          "invoiceItem": "Software License",
+          "createdAt": "2016-05-15",
+          "dueDate": "2016-06-15",
+          "amount": 1200,
+          "amountPaid": 1200,
+          "amountDue": 0,
+          "status": "completed",
+          "daysUntilDue": 0
+        },
+        {
+          "id": "INV-010",
+          "invoiceItem": "Hardware Purchase",
+          "createdAt": "2015-05-15",
+          "dueDate": "2015-06-15",
+          "amount": 2500,
+          "amountPaid": 1000,
+          "amountDue": 1500,
+          "status": "pending",
+          "daysUntilDue": 10
+        },
+        {
+          "id": "INV-011",
+          "invoiceItem": "Consulting services",
+          "createdAt": "2014-05-15",
+          "dueDate": "2014-06-15",
+          "amount": 800,
+          "amountPaid": 200,
+          "amountDue": 600,
+          "status": "pending",
+          "daysUntilDue": 75
+        },
+        {
+          "id": "INV-012",
+          "invoiceItem": "Cloud Storage",
+          "createdAt": "2013-05-15",
+          "dueDate": "2013-06-15",
+          "amount": 2750,
+          "amountPaid": 2750,
+          "amountDue": 0,
+          "status": "completed",
+          "daysUntilDue": 0
+        }
+      ],
+      "collections": [
+        {
+          "invoiceNumber": "INV-001",
+          "collectionNumber": "COL-001",
+          "collectionDate": "2024-05-20T10:30:00Z",
+          "paidAmount": 1500,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-002",
+          "collectionNumber": "COL-002",
+          "collectionDate": "2024-06-15T14:45:00Z",
+          "paidAmount": 1200,
+          "completionStatus": "pending"
+        },
+        {
+          "invoiceNumber": "INV-003",
+          "collectionNumber": "COL-003",
+          "collectionDate": "2024-06-30T09:00:00Z",
+          "paidAmount": 500,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-004",
+          "collectionNumber": "COL-004",
+          "collectionDate": "2024-07-10T11:15:00Z",
+          "paidAmount": 2000,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-005",
+          "collectionNumber": "COL-005",
+          "collectionDate": "2024-07-25T16:00:00Z",
+          "paidAmount": 750,
+          "completionStatus": "pending"
+        },
+        {
+          "invoiceNumber": "INV-006",
+          "collectionNumber": "COL-006",
+          "collectionDate": "2024-08-05T12:30:00Z",
+          "paidAmount": 1300,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-007",
+          "collectionNumber": "COL-007",
+          "collectionDate": "2024-08-20T08:45:00Z",
+          "paidAmount": 1600,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-008",
+          "collectionNumber": "COL-008",
+          "collectionDate": "2024-09-01T15:00:00Z",
+          "paidAmount": 900,
+          "completionStatus": "pending"
+        },
+        {
+          "invoiceNumber": "INV-009",
+          "collectionNumber": "COL-009",
+          "collectionDate": "2024-09-15T10:15:00Z",
+          "paidAmount": 1100,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-010",
+          "collectionNumber": "COL-010",
+          "collectionDate": "2024-10-01T13:30:00Z",
+          "paidAmount": 1400,
+          "completionStatus": "pending"
+        },
+        {
+          "invoiceNumber": "INV-011",
+          "collectionNumber": "COL-011",
+          "collectionDate": "2024-10-15T09:00:00Z",
+          "paidAmount": 1700,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-012",
+          "collectionNumber": "COL-012",
+          "collectionDate": "2024-11-01T11:45:00Z",
+          "paidAmount": 1900,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-013",
+          "collectionNumber": "COL-013",
+          "collectionDate": "2024-11-15T14:30:00Z",
+          "paidAmount": 1800,
+          "completionStatus": "pending"
+        },
+        {
+          "invoiceNumber": "INV-014",
+          "collectionNumber": "COL-014",
+          "collectionDate": "2024-12-01T10:15:00Z",
+          "paidAmount": 1500,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-015",
+          "collectionNumber": "COL-015",
+          "collectionDate": "2024-12-15T12:45:00Z",
+          "paidAmount": 2000,
+          "completionStatus": "completed"
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "name": "Cedarwood Academy",
+      "category": "IGCSE",
+      "product": ["Zeraki Finance"],
+      "county": "Cedarwood County",
+      "registrationDate": "2018-07-15T00:00:00.000Z",
+      "contactInfo": {
+        "phone": "555-8760",
+        "email": "info@cedarwoodacademy.edu"
+      },
+      "balance": 4620,
+      "invoices": [
+        {
+          "id": "INV-001",
+          "invoiceItem": "Software License",
+          "createdAt": "2024-05-15",
+          "dueDate": "2024-06-15",
+          "amount": 1200,
+          "amountPaid": 1200,
+          "amountDue": 0,
+          "status": "completed",
+          "daysUntilDue": 0
+        },
+        {
+          "id": "INV-002",
+          "invoiceItem": "Hardware Purchase",
+          "createdAt": "2023-05-15",
+          "dueDate": "2023-06-15",
+          "amount": 2500,
+          "amountPaid": 1000,
+          "amountDue": 1500,
+          "status": "pending",
+          "daysUntilDue": 10
+        },
+        {
+          "id": "INV-003",
+          "invoiceItem": "Consulting services",
+          "createdAt": "2022-05-15",
+          "dueDate": "2022-06-15",
+          "amount": 800,
+          "amountPaid": 200,
+          "amountDue": 600,
+          "status": "pending",
+          "daysUntilDue": 75
+        },
+        {
+          "id": "INV-004",
+          "invoiceItem": "Cloud Storage",
+          "createdAt": "2021-05-15",
+          "dueDate": "2021-06-15",
+          "amount": 2750,
+          "amountPaid": 2000,
+          "amountDue": 750,
+          "status": "pending",
+          "daysUntilDue": 25
+        },
+        {
+          "id": "INV-005",
+          "invoiceItem": "Software License",
+          "createdAt": "2020-05-15",
+          "dueDate": "2020-06-15",
+          "amount": 1200,
+          "amountPaid": 1200,
+          "amountDue": 0,
+          "status": "completed",
+          "daysUntilDue": 0
+        },
+        {
+          "id": "INV-006",
+          "invoiceItem": "Hardware Purchase",
+          "createdAt": "2019-05-15",
+          "dueDate": "2019-06-15",
+          "amount": 2500,
+          "amountPaid": 1000,
+          "amountDue": 1500,
+          "status": "pending",
+          "daysUntilDue": 10
+        },
+        {
+          "id": "INV-007",
+          "invoiceItem": "Consulting services",
+          "createdAt": "2018-05-15",
+          "dueDate": "2018-06-15",
+          "amount": 800,
+          "amountPaid": 200,
+          "amountDue": 600,
+          "status": "pending",
+          "daysUntilDue": 75
+        },
+        {
+          "id": "INV-008",
+          "invoiceItem": "Cloud Storage",
+          "createdAt": "2017-05-15",
+          "dueDate": "2017-06-15",
+          "amount": 2750,
+          "amountPaid": 2000,
+          "amountDue": 750,
+          "status": "pending",
+          "daysUntilDue": 25
+        },
+        {
+          "id": "INV-009",
+          "invoiceItem": "Software License",
+          "createdAt": "2016-05-15",
+          "dueDate": "2016-06-15",
+          "amount": 1200,
+          "amountPaid": 1200,
+          "amountDue": 0,
+          "status": "completed",
+          "daysUntilDue": 0
+        },
+        {
+          "id": "INV-010",
+          "invoiceItem": "Hardware Purchase",
+          "createdAt": "2015-05-15",
+          "dueDate": "2015-06-15",
+          "amount": 2500,
+          "amountPaid": 1000,
+          "amountDue": 1500,
+          "status": "pending",
+          "daysUntilDue": 10
+        },
+        {
+          "id": "INV-011",
+          "invoiceItem": "Consulting services",
+          "createdAt": "2014-05-15",
+          "dueDate": "2014-06-15",
+          "amount": 800,
+          "amountPaid": 200,
+          "amountDue": 600,
+          "status": "pending",
+          "daysUntilDue": 75
+        },
+        {
+          "id": "INV-012",
+          "invoiceItem": "Cloud Storage",
+          "createdAt": "2013-05-15",
+          "dueDate": "2013-06-15",
+          "amount": 2750,
+          "amountPaid": 2750,
+          "amountDue": 0,
+          "status": "completed",
+          "daysUntilDue": 0
+        }
+      ],
+      "collections": [
+        {
+          "invoiceNumber": "INV-001",
+          "collectionNumber": "COL-001",
+          "collectionDate": "2024-05-20T10:30:00Z",
+          "paidAmount": 1500,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-002",
+          "collectionNumber": "COL-002",
+          "collectionDate": "2024-06-15T14:45:00Z",
+          "paidAmount": 1200,
+          "completionStatus": "pending"
+        },
+        {
+          "invoiceNumber": "INV-003",
+          "collectionNumber": "COL-003",
+          "collectionDate": "2024-06-30T09:00:00Z",
+          "paidAmount": 500,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-004",
+          "collectionNumber": "COL-004",
+          "collectionDate": "2024-07-10T11:15:00Z",
+          "paidAmount": 2000,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-005",
+          "collectionNumber": "COL-005",
+          "collectionDate": "2024-07-25T16:00:00Z",
+          "paidAmount": 750,
+          "completionStatus": "pending"
+        },
+        {
+          "invoiceNumber": "INV-006",
+          "collectionNumber": "COL-006",
+          "collectionDate": "2024-08-05T12:30:00Z",
+          "paidAmount": 1300,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-007",
+          "collectionNumber": "COL-007",
+          "collectionDate": "2024-08-20T08:45:00Z",
+          "paidAmount": 1600,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-008",
+          "collectionNumber": "COL-008",
+          "collectionDate": "2024-09-01T15:00:00Z",
+          "paidAmount": 900,
+          "completionStatus": "pending"
+        },
+        {
+          "invoiceNumber": "INV-009",
+          "collectionNumber": "COL-009",
+          "collectionDate": "2024-09-15T10:15:00Z",
+          "paidAmount": 1100,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-010",
+          "collectionNumber": "COL-010",
+          "collectionDate": "2024-10-01T13:30:00Z",
+          "paidAmount": 1400,
+          "completionStatus": "pending"
+        },
+        {
+          "invoiceNumber": "INV-011",
+          "collectionNumber": "COL-011",
+          "collectionDate": "2024-10-15T09:00:00Z",
+          "paidAmount": 1700,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-012",
+          "collectionNumber": "COL-012",
+          "collectionDate": "2024-11-01T11:45:00Z",
+          "paidAmount": 1900,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-013",
+          "collectionNumber": "COL-013",
+          "collectionDate": "2024-11-15T14:30:00Z",
+          "paidAmount": 1800,
+          "completionStatus": "pending"
+        },
+        {
+          "invoiceNumber": "INV-014",
+          "collectionNumber": "COL-014",
+          "collectionDate": "2024-12-01T10:15:00Z",
+          "paidAmount": 1500,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-015",
+          "collectionNumber": "COL-015",
+          "collectionDate": "2024-12-15T12:45:00Z",
+          "paidAmount": 2000,
+          "completionStatus": "completed"
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "name": "Brookfield Elementary",
+      "category": "Primary",
+      "product": ["Zeraki Analytics"],
+      "county": "Brookfield County",
+      "registrationDate": "2021-06-25T00:00:00.000Z",
+      "contactInfo": {
+        "phone": "555-5432",
+        "email": "contact@brookfieldelem.edu"
+      },
+      "balance": 2300,
+      "invoices": [
+        {
+          "id": "INV-001",
+          "invoiceItem": "Software License",
+          "createdAt": "2024-05-15",
+          "dueDate": "2024-06-15",
+          "amount": 1200,
+          "amountPaid": 1200,
+          "amountDue": 0,
+          "status": "completed",
+          "daysUntilDue": 0
+        },
+        {
+          "id": "INV-002",
+          "invoiceItem": "Hardware Purchase",
+          "createdAt": "2023-05-15",
+          "dueDate": "2023-06-15",
+          "amount": 2500,
+          "amountPaid": 1000,
+          "amountDue": 1500,
+          "status": "pending",
+          "daysUntilDue": 10
+        },
+        {
+          "id": "INV-003",
+          "invoiceItem": "Consulting services",
+          "createdAt": "2022-05-15",
+          "dueDate": "2022-06-15",
+          "amount": 800,
+          "amountPaid": 200,
+          "amountDue": 600,
+          "status": "pending",
+          "daysUntilDue": 75
+        },
+        {
+          "id": "INV-004",
+          "invoiceItem": "Cloud Storage",
+          "createdAt": "2021-05-15",
+          "dueDate": "2021-06-15",
+          "amount": 2750,
+          "amountPaid": 2000,
+          "amountDue": 750,
+          "status": "pending",
+          "daysUntilDue": 25
+        },
+        {
+          "id": "INV-005",
+          "invoiceItem": "Software License",
+          "createdAt": "2020-05-15",
+          "dueDate": "2020-06-15",
+          "amount": 1200,
+          "amountPaid": 1200,
+          "amountDue": 0,
+          "status": "completed",
+          "daysUntilDue": 0
+        },
+        {
+          "id": "INV-006",
+          "invoiceItem": "Hardware Purchase",
+          "createdAt": "2019-05-15",
+          "dueDate": "2019-06-15",
+          "amount": 2500,
+          "amountPaid": 1000,
+          "amountDue": 1500,
+          "status": "pending",
+          "daysUntilDue": 10
+        },
+        {
+          "id": "INV-007",
+          "invoiceItem": "Consulting services",
+          "createdAt": "2018-05-15",
+          "dueDate": "2018-06-15",
+          "amount": 800,
+          "amountPaid": 200,
+          "amountDue": 600,
+          "status": "pending",
+          "daysUntilDue": 75
+        },
+        {
+          "id": "INV-008",
+          "invoiceItem": "Cloud Storage",
+          "createdAt": "2017-05-15",
+          "dueDate": "2017-06-15",
+          "amount": 2750,
+          "amountPaid": 2000,
+          "amountDue": 750,
+          "status": "pending",
+          "daysUntilDue": 25
+        },
+        {
+          "id": "INV-009",
+          "invoiceItem": "Software License",
+          "createdAt": "2016-05-15",
+          "dueDate": "2016-06-15",
+          "amount": 1200,
+          "amountPaid": 1200,
+          "amountDue": 0,
+          "status": "completed",
+          "daysUntilDue": 0
+        },
+        {
+          "id": "INV-010",
+          "invoiceItem": "Hardware Purchase",
+          "createdAt": "2015-05-15",
+          "dueDate": "2015-06-15",
+          "amount": 2500,
+          "amountPaid": 1000,
+          "amountDue": 1500,
+          "status": "pending",
+          "daysUntilDue": 10
+        },
+        {
+          "id": "INV-011",
+          "invoiceItem": "Consulting services",
+          "createdAt": "2014-05-15",
+          "dueDate": "2014-06-15",
+          "amount": 800,
+          "amountPaid": 200,
+          "amountDue": 600,
+          "status": "pending",
+          "daysUntilDue": 75
+        },
+        {
+          "id": "INV-012",
+          "invoiceItem": "Cloud Storage",
+          "createdAt": "2013-05-15",
+          "dueDate": "2013-06-15",
+          "amount": 2750,
+          "amountPaid": 2750,
+          "amountDue": 0,
+          "status": "completed",
+          "daysUntilDue": 0
+        }
+      ],
+      "collections": [
+        {
+          "invoiceNumber": "INV-001",
+          "collectionNumber": "COL-001",
+          "collectionDate": "2024-05-20T10:30:00Z",
+          "paidAmount": 1500,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-002",
+          "collectionNumber": "COL-002",
+          "collectionDate": "2024-06-15T14:45:00Z",
+          "paidAmount": 1200,
+          "completionStatus": "pending"
+        },
+        {
+          "invoiceNumber": "INV-003",
+          "collectionNumber": "COL-003",
+          "collectionDate": "2024-06-30T09:00:00Z",
+          "paidAmount": 500,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-004",
+          "collectionNumber": "COL-004",
+          "collectionDate": "2024-07-10T11:15:00Z",
+          "paidAmount": 2000,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-005",
+          "collectionNumber": "COL-005",
+          "collectionDate": "2024-07-25T16:00:00Z",
+          "paidAmount": 750,
+          "completionStatus": "pending"
+        },
+        {
+          "invoiceNumber": "INV-006",
+          "collectionNumber": "COL-006",
+          "collectionDate": "2024-08-05T12:30:00Z",
+          "paidAmount": 1300,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-007",
+          "collectionNumber": "COL-007",
+          "collectionDate": "2024-08-20T08:45:00Z",
+          "paidAmount": 1600,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-008",
+          "collectionNumber": "COL-008",
+          "collectionDate": "2024-09-01T15:00:00Z",
+          "paidAmount": 900,
+          "completionStatus": "pending"
+        },
+        {
+          "invoiceNumber": "INV-009",
+          "collectionNumber": "COL-009",
+          "collectionDate": "2024-09-15T10:15:00Z",
+          "paidAmount": 1100,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-010",
+          "collectionNumber": "COL-010",
+          "collectionDate": "2024-10-01T13:30:00Z",
+          "paidAmount": 1400,
+          "completionStatus": "pending"
+        },
+        {
+          "invoiceNumber": "INV-011",
+          "collectionNumber": "COL-011",
+          "collectionDate": "2024-10-15T09:00:00Z",
+          "paidAmount": 1700,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-012",
+          "collectionNumber": "COL-012",
+          "collectionDate": "2024-11-01T11:45:00Z",
+          "paidAmount": 1900,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-013",
+          "collectionNumber": "COL-013",
+          "collectionDate": "2024-11-15T14:30:00Z",
+          "paidAmount": 1800,
+          "completionStatus": "pending"
+        },
+        {
+          "invoiceNumber": "INV-014",
+          "collectionNumber": "COL-014",
+          "collectionDate": "2024-12-01T10:15:00Z",
+          "paidAmount": 1500,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-015",
+          "collectionNumber": "COL-015",
+          "collectionDate": "2024-12-15T12:45:00Z",
+          "paidAmount": 2000,
+          "completionStatus": "completed"
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "name": "Maplewood High",
+      "category": "Secondary",
+      "product": ["Zeraki Timetable", "Zeraki Finance", "Zeraki Analytics"],
+      "county": "Maplewood County",
+      "registrationDate": "2021-07-20T00:00:00.000Z",
+      "contactInfo": {
+        "phone": "555-0987",
+        "email": "info@maplewoodhigh.edu"
+      },
+      "balance": 3580,
+      "invoices": [
+        {
+          "id": "INV-001",
+          "invoiceItem": "Software License",
+          "createdAt": "2024-05-15",
+          "dueDate": "2024-06-15",
+          "amount": 1200,
+          "amountPaid": 1200,
+          "amountDue": 0,
+          "status": "completed",
+          "daysUntilDue": 0
+        },
+        {
+          "id": "INV-002",
+          "invoiceItem": "Hardware Purchase",
+          "createdAt": "2023-05-15",
+          "dueDate": "2023-06-15",
+          "amount": 2500,
+          "amountPaid": 1000,
+          "amountDue": 1500,
+          "status": "pending",
+          "daysUntilDue": 10
+        },
+        {
+          "id": "INV-003",
+          "invoiceItem": "Consulting services",
+          "createdAt": "2022-05-15",
+          "dueDate": "2022-06-15",
+          "amount": 800,
+          "amountPaid": 200,
+          "amountDue": 600,
+          "status": "pending",
+          "daysUntilDue": 75
+        },
+        {
+          "id": "INV-004",
+          "invoiceItem": "Cloud Storage",
+          "createdAt": "2021-05-15",
+          "dueDate": "2021-06-15",
+          "amount": 2750,
+          "amountPaid": 2000,
+          "amountDue": 750,
+          "status": "pending",
+          "daysUntilDue": 25
+        },
+        {
+          "id": "INV-005",
+          "invoiceItem": "Software License",
+          "createdAt": "2020-05-15",
+          "dueDate": "2020-06-15",
+          "amount": 1200,
+          "amountPaid": 1200,
+          "amountDue": 0,
+          "status": "completed",
+          "daysUntilDue": 0
+        },
+        {
+          "id": "INV-006",
+          "invoiceItem": "Hardware Purchase",
+          "createdAt": "2019-05-15",
+          "dueDate": "2019-06-15",
+          "amount": 2500,
+          "amountPaid": 1000,
+          "amountDue": 1500,
+          "status": "pending",
+          "daysUntilDue": 10
+        },
+        {
+          "id": "INV-007",
+          "invoiceItem": "Consulting services",
+          "createdAt": "2018-05-15",
+          "dueDate": "2018-06-15",
+          "amount": 800,
+          "amountPaid": 200,
+          "amountDue": 600,
+          "status": "pending",
+          "daysUntilDue": 75
+        },
+        {
+          "id": "INV-008",
+          "invoiceItem": "Cloud Storage",
+          "createdAt": "2017-05-15",
+          "dueDate": "2017-06-15",
+          "amount": 2750,
+          "amountPaid": 2000,
+          "amountDue": 750,
+          "status": "pending",
+          "daysUntilDue": 25
+        },
+        {
+          "id": "INV-009",
+          "invoiceItem": "Software License",
+          "createdAt": "2016-05-15",
+          "dueDate": "2016-06-15",
+          "amount": 1200,
+          "amountPaid": 1200,
+          "amountDue": 0,
+          "status": "completed",
+          "daysUntilDue": 0
+        },
+        {
+          "id": "INV-010",
+          "invoiceItem": "Hardware Purchase",
+          "createdAt": "2015-05-15",
+          "dueDate": "2015-06-15",
+          "amount": 2500,
+          "amountPaid": 1000,
+          "amountDue": 1500,
+          "status": "pending",
+          "daysUntilDue": 10
+        },
+        {
+          "id": "INV-011",
+          "invoiceItem": "Consulting services",
+          "createdAt": "2014-05-15",
+          "dueDate": "2014-06-15",
+          "amount": 800,
+          "amountPaid": 200,
+          "amountDue": 600,
+          "status": "pending",
+          "daysUntilDue": 75
+        },
+        {
+          "id": "INV-012",
+          "invoiceItem": "Cloud Storage",
+          "createdAt": "2013-05-15",
+          "dueDate": "2013-06-15",
+          "amount": 2750,
+          "amountPaid": 2750,
+          "amountDue": 0,
+          "status": "completed",
+          "daysUntilDue": 0
+        }
+      ],
+      "collections": [
+        {
+          "invoiceNumber": "INV-001",
+          "collectionNumber": "COL-001",
+          "collectionDate": "2024-05-20T10:30:00Z",
+          "paidAmount": 1500,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-002",
+          "collectionNumber": "COL-002",
+          "collectionDate": "2024-06-15T14:45:00Z",
+          "paidAmount": 1200,
+          "completionStatus": "pending"
+        },
+        {
+          "invoiceNumber": "INV-003",
+          "collectionNumber": "COL-003",
+          "collectionDate": "2024-06-30T09:00:00Z",
+          "paidAmount": 500,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-004",
+          "collectionNumber": "COL-004",
+          "collectionDate": "2024-07-10T11:15:00Z",
+          "paidAmount": 2000,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-005",
+          "collectionNumber": "COL-005",
+          "collectionDate": "2024-07-25T16:00:00Z",
+          "paidAmount": 750,
+          "completionStatus": "pending"
+        },
+        {
+          "invoiceNumber": "INV-006",
+          "collectionNumber": "COL-006",
+          "collectionDate": "2024-08-05T12:30:00Z",
+          "paidAmount": 1300,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-007",
+          "collectionNumber": "COL-007",
+          "collectionDate": "2024-08-20T08:45:00Z",
+          "paidAmount": 1600,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-008",
+          "collectionNumber": "COL-008",
+          "collectionDate": "2024-09-01T15:00:00Z",
+          "paidAmount": 900,
+          "completionStatus": "pending"
+        },
+        {
+          "invoiceNumber": "INV-009",
+          "collectionNumber": "COL-009",
+          "collectionDate": "2024-09-15T10:15:00Z",
+          "paidAmount": 1100,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-010",
+          "collectionNumber": "COL-010",
+          "collectionDate": "2024-10-01T13:30:00Z",
+          "paidAmount": 1400,
+          "completionStatus": "pending"
+        },
+        {
+          "invoiceNumber": "INV-011",
+          "collectionNumber": "COL-011",
+          "collectionDate": "2024-10-15T09:00:00Z",
+          "paidAmount": 1700,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-012",
+          "collectionNumber": "COL-012",
+          "collectionDate": "2024-11-01T11:45:00Z",
+          "paidAmount": 1900,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-013",
+          "collectionNumber": "COL-013",
+          "collectionDate": "2024-11-15T14:30:00Z",
+          "paidAmount": 1800,
+          "completionStatus": "pending"
+        },
+        {
+          "invoiceNumber": "INV-014",
+          "collectionNumber": "COL-014",
+          "collectionDate": "2024-12-01T10:15:00Z",
+          "paidAmount": 1500,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-015",
+          "collectionNumber": "COL-015",
+          "collectionDate": "2024-12-15T12:45:00Z",
+          "paidAmount": 2000,
+          "completionStatus": "completed"
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "name": "Oakridge High School",
+      "category": "Secondary",
+      "product": ["Zeraki Finance", "Zeraki Timetable"],
+      "county": "Oakridge County",
+      "registrationDate": "2020-08-15T00:00:00.000Z",
+      "contactInfo": {
+        "phone": "555-6578",
+        "email": "contact@oakridgehigh.edu"
+      },
+      "balance": 9000,
+      "invoices": [
+        {
+          "id": "INV-001",
+          "invoiceItem": "Software License",
+          "createdAt": "2024-05-15",
+          "dueDate": "2024-06-15",
+          "amount": 1200,
+          "amountPaid": 1200,
+          "amountDue": 0,
+          "status": "completed",
+          "daysUntilDue": 0
+        },
+        {
+          "id": "INV-002",
+          "invoiceItem": "Hardware Purchase",
+          "createdAt": "2023-05-15",
+          "dueDate": "2023-06-15",
+          "amount": 2500,
+          "amountPaid": 1000,
+          "amountDue": 1500,
+          "status": "pending",
+          "daysUntilDue": 10
+        },
+        {
+          "id": "INV-003",
+          "invoiceItem": "Consulting services",
+          "createdAt": "2022-05-15",
+          "dueDate": "2022-06-15",
+          "amount": 800,
+          "amountPaid": 200,
+          "amountDue": 600,
+          "status": "pending",
+          "daysUntilDue": 75
+        },
+        {
+          "id": "INV-004",
+          "invoiceItem": "Cloud Storage",
+          "createdAt": "2021-05-15",
+          "dueDate": "2021-06-15",
+          "amount": 2750,
+          "amountPaid": 2000,
+          "amountDue": 750,
+          "status": "pending",
+          "daysUntilDue": 25
+        },
+        {
+          "id": "INV-005",
+          "invoiceItem": "Software License",
+          "createdAt": "2020-05-15",
+          "dueDate": "2020-06-15",
+          "amount": 1200,
+          "amountPaid": 1200,
+          "amountDue": 0,
+          "status": "completed",
+          "daysUntilDue": 0
+        },
+        {
+          "id": "INV-006",
+          "invoiceItem": "Hardware Purchase",
+          "createdAt": "2019-05-15",
+          "dueDate": "2019-06-15",
+          "amount": 2500,
+          "amountPaid": 1000,
+          "amountDue": 1500,
+          "status": "pending",
+          "daysUntilDue": 10
+        },
+        {
+          "id": "INV-007",
+          "invoiceItem": "Consulting services",
+          "createdAt": "2018-05-15",
+          "dueDate": "2018-06-15",
+          "amount": 800,
+          "amountPaid": 200,
+          "amountDue": 600,
+          "status": "pending",
+          "daysUntilDue": 75
+        },
+        {
+          "id": "INV-008",
+          "invoiceItem": "Cloud Storage",
+          "createdAt": "2017-05-15",
+          "dueDate": "2017-06-15",
+          "amount": 2750,
+          "amountPaid": 2000,
+          "amountDue": 750,
+          "status": "pending",
+          "daysUntilDue": 25
+        },
+        {
+          "id": "INV-009",
+          "invoiceItem": "Software License",
+          "createdAt": "2016-05-15",
+          "dueDate": "2016-06-15",
+          "amount": 1200,
+          "amountPaid": 1200,
+          "amountDue": 0,
+          "status": "completed",
+          "daysUntilDue": 0
+        },
+        {
+          "id": "INV-010",
+          "invoiceItem": "Hardware Purchase",
+          "createdAt": "2015-05-15",
+          "dueDate": "2015-06-15",
+          "amount": 2500,
+          "amountPaid": 1000,
+          "amountDue": 1500,
+          "status": "pending",
+          "daysUntilDue": 10
+        },
+        {
+          "id": "INV-011",
+          "invoiceItem": "Consulting services",
+          "createdAt": "2014-05-15",
+          "dueDate": "2014-06-15",
+          "amount": 800,
+          "amountPaid": 200,
+          "amountDue": 600,
+          "status": "pending",
+          "daysUntilDue": 75
+        },
+        {
+          "id": "INV-012",
+          "invoiceItem": "Cloud Storage",
+          "createdAt": "2013-05-15",
+          "dueDate": "2013-06-15",
+          "amount": 2750,
+          "amountPaid": 2750,
+          "amountDue": 0,
+          "status": "completed",
+          "daysUntilDue": 0
+        }
+      ],
+      "collections": [
+        {
+          "invoiceNumber": "INV-001",
+          "collectionNumber": "COL-001",
+          "collectionDate": "2024-05-20T10:30:00Z",
+          "paidAmount": 1500,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-002",
+          "collectionNumber": "COL-002",
+          "collectionDate": "2024-06-15T14:45:00Z",
+          "paidAmount": 1200,
+          "completionStatus": "pending"
+        },
+        {
+          "invoiceNumber": "INV-003",
+          "collectionNumber": "COL-003",
+          "collectionDate": "2024-06-30T09:00:00Z",
+          "paidAmount": 500,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-004",
+          "collectionNumber": "COL-004",
+          "collectionDate": "2024-07-10T11:15:00Z",
+          "paidAmount": 2000,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-005",
+          "collectionNumber": "COL-005",
+          "collectionDate": "2024-07-25T16:00:00Z",
+          "paidAmount": 750,
+          "completionStatus": "pending"
+        },
+        {
+          "invoiceNumber": "INV-006",
+          "collectionNumber": "COL-006",
+          "collectionDate": "2024-08-05T12:30:00Z",
+          "paidAmount": 1300,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-007",
+          "collectionNumber": "COL-007",
+          "collectionDate": "2024-08-20T08:45:00Z",
+          "paidAmount": 1600,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-008",
+          "collectionNumber": "COL-008",
+          "collectionDate": "2024-09-01T15:00:00Z",
+          "paidAmount": 900,
+          "completionStatus": "pending"
+        },
+        {
+          "invoiceNumber": "INV-009",
+          "collectionNumber": "COL-009",
+          "collectionDate": "2024-09-15T10:15:00Z",
+          "paidAmount": 1100,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-010",
+          "collectionNumber": "COL-010",
+          "collectionDate": "2024-10-01T13:30:00Z",
+          "paidAmount": 1400,
+          "completionStatus": "pending"
+        },
+        {
+          "invoiceNumber": "INV-011",
+          "collectionNumber": "COL-011",
+          "collectionDate": "2024-10-15T09:00:00Z",
+          "paidAmount": 1700,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-012",
+          "collectionNumber": "COL-012",
+          "collectionDate": "2024-11-01T11:45:00Z",
+          "paidAmount": 1900,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-013",
+          "collectionNumber": "COL-013",
+          "collectionDate": "2024-11-15T14:30:00Z",
+          "paidAmount": 1800,
+          "completionStatus": "pending"
+        },
+        {
+          "invoiceNumber": "INV-014",
+          "collectionNumber": "COL-014",
+          "collectionDate": "2024-12-01T10:15:00Z",
+          "paidAmount": 1500,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-015",
+          "collectionNumber": "COL-015",
+          "collectionDate": "2024-12-15T12:45:00Z",
+          "paidAmount": 2000,
+          "completionStatus": "completed"
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "name": "Pinehill Elementary",
+      "category": "Primary",
+      "product": ["Zeraki Analytics"],
+      "county": "Pinehill County",
+      "registrationDate": "2021-09-10T00:00:00.000Z",
+      "contactInfo": {
+        "phone": "555-1230",
+        "email": "info@pinehillelem.edu"
+      },
+      "balance": 8760,
+      "invoices": [
+        {
+          "id": "INV-001",
+          "invoiceItem": "Software License",
+          "createdAt": "2024-05-15",
+          "dueDate": "2024-06-15",
+          "amount": 1200,
+          "amountPaid": 1200,
+          "amountDue": 0,
+          "status": "completed",
+          "daysUntilDue": 0
+        },
+        {
+          "id": "INV-002",
+          "invoiceItem": "Hardware Purchase",
+          "createdAt": "2023-05-15",
+          "dueDate": "2023-06-15",
+          "amount": 2500,
+          "amountPaid": 1000,
+          "amountDue": 1500,
+          "status": "pending",
+          "daysUntilDue": 10
+        },
+        {
+          "id": "INV-003",
+          "invoiceItem": "Consulting services",
+          "createdAt": "2022-05-15",
+          "dueDate": "2022-06-15",
+          "amount": 800,
+          "amountPaid": 200,
+          "amountDue": 600,
+          "status": "pending",
+          "daysUntilDue": 75
+        },
+        {
+          "id": "INV-004",
+          "invoiceItem": "Cloud Storage",
+          "createdAt": "2021-05-15",
+          "dueDate": "2021-06-15",
+          "amount": 2750,
+          "amountPaid": 2000,
+          "amountDue": 750,
+          "status": "pending",
+          "daysUntilDue": 25
+        },
+        {
+          "id": "INV-005",
+          "invoiceItem": "Software License",
+          "createdAt": "2020-05-15",
+          "dueDate": "2020-06-15",
+          "amount": 1200,
+          "amountPaid": 1200,
+          "amountDue": 0,
+          "status": "completed",
+          "daysUntilDue": 0
+        },
+        {
+          "id": "INV-006",
+          "invoiceItem": "Hardware Purchase",
+          "createdAt": "2019-05-15",
+          "dueDate": "2019-06-15",
+          "amount": 2500,
+          "amountPaid": 1000,
+          "amountDue": 1500,
+          "status": "pending",
+          "daysUntilDue": 10
+        },
+        {
+          "id": "INV-007",
+          "invoiceItem": "Consulting services",
+          "createdAt": "2018-05-15",
+          "dueDate": "2018-06-15",
+          "amount": 800,
+          "amountPaid": 200,
+          "amountDue": 600,
+          "status": "pending",
+          "daysUntilDue": 75
+        },
+        {
+          "id": "INV-008",
+          "invoiceItem": "Cloud Storage",
+          "createdAt": "2017-05-15",
+          "dueDate": "2017-06-15",
+          "amount": 2750,
+          "amountPaid": 2000,
+          "amountDue": 750,
+          "status": "pending",
+          "daysUntilDue": 25
+        },
+        {
+          "id": "INV-009",
+          "invoiceItem": "Software License",
+          "createdAt": "2016-05-15",
+          "dueDate": "2016-06-15",
+          "amount": 1200,
+          "amountPaid": 1200,
+          "amountDue": 0,
+          "status": "completed",
+          "daysUntilDue": 0
+        },
+        {
+          "id": "INV-010",
+          "invoiceItem": "Hardware Purchase",
+          "createdAt": "2015-05-15",
+          "dueDate": "2015-06-15",
+          "amount": 2500,
+          "amountPaid": 1000,
+          "amountDue": 1500,
+          "status": "pending",
+          "daysUntilDue": 10
+        },
+        {
+          "id": "INV-011",
+          "invoiceItem": "Consulting services",
+          "createdAt": "2014-05-15",
+          "dueDate": "2014-06-15",
+          "amount": 800,
+          "amountPaid": 200,
+          "amountDue": 600,
+          "status": "pending",
+          "daysUntilDue": 75
+        },
+        {
+          "id": "INV-012",
+          "invoiceItem": "Cloud Storage",
+          "createdAt": "2013-05-15",
+          "dueDate": "2013-06-15",
+          "amount": 2750,
+          "amountPaid": 2750,
+          "amountDue": 0,
+          "status": "completed",
+          "daysUntilDue": 0
+        }
+      ],
+      "collections": [
+        {
+          "invoiceNumber": "INV-001",
+          "collectionNumber": "COL-001",
+          "collectionDate": "2024-05-20T10:30:00Z",
+          "paidAmount": 1500,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-002",
+          "collectionNumber": "COL-002",
+          "collectionDate": "2024-06-15T14:45:00Z",
+          "paidAmount": 1200,
+          "completionStatus": "pending"
+        },
+        {
+          "invoiceNumber": "INV-003",
+          "collectionNumber": "COL-003",
+          "collectionDate": "2024-06-30T09:00:00Z",
+          "paidAmount": 500,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-004",
+          "collectionNumber": "COL-004",
+          "collectionDate": "2024-07-10T11:15:00Z",
+          "paidAmount": 2000,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-005",
+          "collectionNumber": "COL-005",
+          "collectionDate": "2024-07-25T16:00:00Z",
+          "paidAmount": 750,
+          "completionStatus": "pending"
+        },
+        {
+          "invoiceNumber": "INV-006",
+          "collectionNumber": "COL-006",
+          "collectionDate": "2024-08-05T12:30:00Z",
+          "paidAmount": 1300,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-007",
+          "collectionNumber": "COL-007",
+          "collectionDate": "2024-08-20T08:45:00Z",
+          "paidAmount": 1600,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-008",
+          "collectionNumber": "COL-008",
+          "collectionDate": "2024-09-01T15:00:00Z",
+          "paidAmount": 900,
+          "completionStatus": "pending"
+        },
+        {
+          "invoiceNumber": "INV-009",
+          "collectionNumber": "COL-009",
+          "collectionDate": "2024-09-15T10:15:00Z",
+          "paidAmount": 1100,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-010",
+          "collectionNumber": "COL-010",
+          "collectionDate": "2024-10-01T13:30:00Z",
+          "paidAmount": 1400,
+          "completionStatus": "pending"
+        },
+        {
+          "invoiceNumber": "INV-011",
+          "collectionNumber": "COL-011",
+          "collectionDate": "2024-10-15T09:00:00Z",
+          "paidAmount": 1700,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-012",
+          "collectionNumber": "COL-012",
+          "collectionDate": "2024-11-01T11:45:00Z",
+          "paidAmount": 1900,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-013",
+          "collectionNumber": "COL-013",
+          "collectionDate": "2024-11-15T14:30:00Z",
+          "paidAmount": 1800,
+          "completionStatus": "pending"
+        },
+        {
+          "invoiceNumber": "INV-014",
+          "collectionNumber": "COL-014",
+          "collectionDate": "2024-12-01T10:15:00Z",
+          "paidAmount": 1500,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-015",
+          "collectionNumber": "COL-015",
+          "collectionDate": "2024-12-15T12:45:00Z",
+          "paidAmount": 2000,
+          "completionStatus": "completed"
+        }
+      ]
+    },
+    {
+      "id": "13",
+      "name": "Elmwood Academy",
+      "category": "IGCSE",
+      "product": ["Zeraki Finance"],
+      "county": "Elmwood County",
+      "registrationDate": "2019-11-12T00:00:00.000Z",
+      "contactInfo": {
+        "phone": "555-8764",
+        "email": "contact@elmwoodacademy.edu"
+      },
+      "balance": 1100,
+      "invoices": [
+        {
+          "id": "INV-001",
+          "invoiceItem": "Software License",
+          "createdAt": "2024-05-15",
+          "dueDate": "2024-06-15",
+          "amount": 1200,
+          "amountPaid": 1200,
+          "amountDue": 0,
+          "status": "completed",
+          "daysUntilDue": 0
+        },
+        {
+          "id": "INV-002",
+          "invoiceItem": "Hardware Purchase",
+          "createdAt": "2023-05-15",
+          "dueDate": "2023-06-15",
+          "amount": 2500,
+          "amountPaid": 1000,
+          "amountDue": 1500,
+          "status": "pending",
+          "daysUntilDue": 10
+        },
+        {
+          "id": "INV-003",
+          "invoiceItem": "Consulting services",
+          "createdAt": "2022-05-15",
+          "dueDate": "2022-06-15",
+          "amount": 800,
+          "amountPaid": 200,
+          "amountDue": 600,
+          "status": "pending",
+          "daysUntilDue": 75
+        },
+        {
+          "id": "INV-004",
+          "invoiceItem": "Cloud Storage",
+          "createdAt": "2021-05-15",
+          "dueDate": "2021-06-15",
+          "amount": 2750,
+          "amountPaid": 2000,
+          "amountDue": 750,
+          "status": "pending",
+          "daysUntilDue": 25
+        },
+        {
+          "id": "INV-005",
+          "invoiceItem": "Software License",
+          "createdAt": "2020-05-15",
+          "dueDate": "2020-06-15",
+          "amount": 1200,
+          "amountPaid": 1200,
+          "amountDue": 0,
+          "status": "completed",
+          "daysUntilDue": 0
+        },
+        {
+          "id": "INV-006",
+          "invoiceItem": "Hardware Purchase",
+          "createdAt": "2019-05-15",
+          "dueDate": "2019-06-15",
+          "amount": 2500,
+          "amountPaid": 1000,
+          "amountDue": 1500,
+          "status": "pending",
+          "daysUntilDue": 10
+        },
+        {
+          "id": "INV-007",
+          "invoiceItem": "Consulting services",
+          "createdAt": "2018-05-15",
+          "dueDate": "2018-06-15",
+          "amount": 800,
+          "amountPaid": 200,
+          "amountDue": 600,
+          "status": "pending",
+          "daysUntilDue": 75
+        },
+        {
+          "id": "INV-008",
+          "invoiceItem": "Cloud Storage",
+          "createdAt": "2017-05-15",
+          "dueDate": "2017-06-15",
+          "amount": 2750,
+          "amountPaid": 2000,
+          "amountDue": 750,
+          "status": "pending",
+          "daysUntilDue": 25
+        },
+        {
+          "id": "INV-009",
+          "invoiceItem": "Software License",
+          "createdAt": "2016-05-15",
+          "dueDate": "2016-06-15",
+          "amount": 1200,
+          "amountPaid": 1200,
+          "amountDue": 0,
+          "status": "completed",
+          "daysUntilDue": 0
+        },
+        {
+          "id": "INV-010",
+          "invoiceItem": "Hardware Purchase",
+          "createdAt": "2015-05-15",
+          "dueDate": "2015-06-15",
+          "amount": 2500,
+          "amountPaid": 1000,
+          "amountDue": 1500,
+          "status": "pending",
+          "daysUntilDue": 10
+        },
+        {
+          "id": "INV-011",
+          "invoiceItem": "Consulting services",
+          "createdAt": "2014-05-15",
+          "dueDate": "2014-06-15",
+          "amount": 800,
+          "amountPaid": 200,
+          "amountDue": 600,
+          "status": "pending",
+          "daysUntilDue": 75
+        },
+        {
+          "id": "INV-012",
+          "invoiceItem": "Cloud Storage",
+          "createdAt": "2013-05-15",
+          "dueDate": "2013-06-15",
+          "amount": 2750,
+          "amountPaid": 2750,
+          "amountDue": 0,
+          "status": "completed",
+          "daysUntilDue": 0
+        }
+      ],
+      "collections": [
+        {
+          "invoiceNumber": "INV-001",
+          "collectionNumber": "COL-001",
+          "collectionDate": "2024-05-20T10:30:00Z",
+          "paidAmount": 1500,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-002",
+          "collectionNumber": "COL-002",
+          "collectionDate": "2024-06-15T14:45:00Z",
+          "paidAmount": 1200,
+          "completionStatus": "pending"
+        },
+        {
+          "invoiceNumber": "INV-003",
+          "collectionNumber": "COL-003",
+          "collectionDate": "2024-06-30T09:00:00Z",
+          "paidAmount": 500,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-004",
+          "collectionNumber": "COL-004",
+          "collectionDate": "2024-07-10T11:15:00Z",
+          "paidAmount": 2000,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-005",
+          "collectionNumber": "COL-005",
+          "collectionDate": "2024-07-25T16:00:00Z",
+          "paidAmount": 750,
+          "completionStatus": "pending"
+        },
+        {
+          "invoiceNumber": "INV-006",
+          "collectionNumber": "COL-006",
+          "collectionDate": "2024-08-05T12:30:00Z",
+          "paidAmount": 1300,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-007",
+          "collectionNumber": "COL-007",
+          "collectionDate": "2024-08-20T08:45:00Z",
+          "paidAmount": 1600,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-008",
+          "collectionNumber": "COL-008",
+          "collectionDate": "2024-09-01T15:00:00Z",
+          "paidAmount": 900,
+          "completionStatus": "pending"
+        },
+        {
+          "invoiceNumber": "INV-009",
+          "collectionNumber": "COL-009",
+          "collectionDate": "2024-09-15T10:15:00Z",
+          "paidAmount": 1100,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-010",
+          "collectionNumber": "COL-010",
+          "collectionDate": "2024-10-01T13:30:00Z",
+          "paidAmount": 1400,
+          "completionStatus": "pending"
+        },
+        {
+          "invoiceNumber": "INV-011",
+          "collectionNumber": "COL-011",
+          "collectionDate": "2024-10-15T09:00:00Z",
+          "paidAmount": 1700,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-012",
+          "collectionNumber": "COL-012",
+          "collectionDate": "2024-11-01T11:45:00Z",
+          "paidAmount": 1900,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-013",
+          "collectionNumber": "COL-013",
+          "collectionDate": "2024-11-15T14:30:00Z",
+          "paidAmount": 1800,
+          "completionStatus": "pending"
+        },
+        {
+          "invoiceNumber": "INV-014",
+          "collectionNumber": "COL-014",
+          "collectionDate": "2024-12-01T10:15:00Z",
+          "paidAmount": 1500,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-015",
+          "collectionNumber": "COL-015",
+          "collectionDate": "2024-12-15T12:45:00Z",
+          "paidAmount": 2000,
+          "completionStatus": "completed"
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "name": "Riverside High",
+      "category": "Secondary",
+      "product": ["Zeraki Timetable", "Zeraki Finance", "Zeraki Analytics"],
+      "county": "Riverside County",
+      "registrationDate": "2018-10-05T00:00:00.000Z",
+      "contactInfo": {
+        "phone": "555-4322",
+        "email": "info@riversidehigh.edu"
+      },
+      "balance": 980,
+      "invoices": [
+        {
+          "id": "INV-001",
+          "invoiceItem": "Software License",
+          "createdAt": "2024-05-15",
+          "dueDate": "2024-06-15",
+          "amount": 1200,
+          "amountPaid": 1200,
+          "amountDue": 0,
+          "status": "completed",
+          "daysUntilDue": 0
+        },
+        {
+          "id": "INV-002",
+          "invoiceItem": "Hardware Purchase",
+          "createdAt": "2023-05-15",
+          "dueDate": "2023-06-15",
+          "amount": 2500,
+          "amountPaid": 1000,
+          "amountDue": 1500,
+          "status": "pending",
+          "daysUntilDue": 10
+        },
+        {
+          "id": "INV-003",
+          "invoiceItem": "Consulting services",
+          "createdAt": "2022-05-15",
+          "dueDate": "2022-06-15",
+          "amount": 800,
+          "amountPaid": 200,
+          "amountDue": 600,
+          "status": "pending",
+          "daysUntilDue": 75
+        },
+        {
+          "id": "INV-004",
+          "invoiceItem": "Cloud Storage",
+          "createdAt": "2021-05-15",
+          "dueDate": "2021-06-15",
+          "amount": 2750,
+          "amountPaid": 2000,
+          "amountDue": 750,
+          "status": "pending",
+          "daysUntilDue": 25
+        },
+        {
+          "id": "INV-005",
+          "invoiceItem": "Software License",
+          "createdAt": "2020-05-15",
+          "dueDate": "2020-06-15",
+          "amount": 1200,
+          "amountPaid": 1200,
+          "amountDue": 0,
+          "status": "completed",
+          "daysUntilDue": 0
+        },
+        {
+          "id": "INV-006",
+          "invoiceItem": "Hardware Purchase",
+          "createdAt": "2019-05-15",
+          "dueDate": "2019-06-15",
+          "amount": 2500,
+          "amountPaid": 1000,
+          "amountDue": 1500,
+          "status": "pending",
+          "daysUntilDue": 10
+        },
+        {
+          "id": "INV-007",
+          "invoiceItem": "Consulting services",
+          "createdAt": "2018-05-15",
+          "dueDate": "2018-06-15",
+          "amount": 800,
+          "amountPaid": 200,
+          "amountDue": 600,
+          "status": "pending",
+          "daysUntilDue": 75
+        },
+        {
+          "id": "INV-008",
+          "invoiceItem": "Cloud Storage",
+          "createdAt": "2017-05-15",
+          "dueDate": "2017-06-15",
+          "amount": 2750,
+          "amountPaid": 2000,
+          "amountDue": 750,
+          "status": "pending",
+          "daysUntilDue": 25
+        },
+        {
+          "id": "INV-009",
+          "invoiceItem": "Software License",
+          "createdAt": "2016-05-15",
+          "dueDate": "2016-06-15",
+          "amount": 1200,
+          "amountPaid": 1200,
+          "amountDue": 0,
+          "status": "completed",
+          "daysUntilDue": 0
+        },
+        {
+          "id": "INV-010",
+          "invoiceItem": "Hardware Purchase",
+          "createdAt": "2015-05-15",
+          "dueDate": "2015-06-15",
+          "amount": 2500,
+          "amountPaid": 1000,
+          "amountDue": 1500,
+          "status": "pending",
+          "daysUntilDue": 10
+        },
+        {
+          "id": "INV-011",
+          "invoiceItem": "Consulting services",
+          "createdAt": "2014-05-15",
+          "dueDate": "2014-06-15",
+          "amount": 800,
+          "amountPaid": 200,
+          "amountDue": 600,
+          "status": "pending",
+          "daysUntilDue": 75
+        },
+        {
+          "id": "INV-012",
+          "invoiceItem": "Cloud Storage",
+          "createdAt": "2013-05-15",
+          "dueDate": "2013-06-15",
+          "amount": 2750,
+          "amountPaid": 2750,
+          "amountDue": 0,
+          "status": "completed",
+          "daysUntilDue": 0
+        }
+      ],
+      "collections": [
+        {
+          "invoiceNumber": "INV-001",
+          "collectionNumber": "COL-001",
+          "collectionDate": "2024-05-20T10:30:00Z",
+          "paidAmount": 1500,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-002",
+          "collectionNumber": "COL-002",
+          "collectionDate": "2024-06-15T14:45:00Z",
+          "paidAmount": 1200,
+          "completionStatus": "pending"
+        },
+        {
+          "invoiceNumber": "INV-003",
+          "collectionNumber": "COL-003",
+          "collectionDate": "2024-06-30T09:00:00Z",
+          "paidAmount": 500,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-004",
+          "collectionNumber": "COL-004",
+          "collectionDate": "2024-07-10T11:15:00Z",
+          "paidAmount": 2000,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-005",
+          "collectionNumber": "COL-005",
+          "collectionDate": "2024-07-25T16:00:00Z",
+          "paidAmount": 750,
+          "completionStatus": "pending"
+        },
+        {
+          "invoiceNumber": "INV-006",
+          "collectionNumber": "COL-006",
+          "collectionDate": "2024-08-05T12:30:00Z",
+          "paidAmount": 1300,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-007",
+          "collectionNumber": "COL-007",
+          "collectionDate": "2024-08-20T08:45:00Z",
+          "paidAmount": 1600,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-008",
+          "collectionNumber": "COL-008",
+          "collectionDate": "2024-09-01T15:00:00Z",
+          "paidAmount": 900,
+          "completionStatus": "pending"
+        },
+        {
+          "invoiceNumber": "INV-009",
+          "collectionNumber": "COL-009",
+          "collectionDate": "2024-09-15T10:15:00Z",
+          "paidAmount": 1100,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-010",
+          "collectionNumber": "COL-010",
+          "collectionDate": "2024-10-01T13:30:00Z",
+          "paidAmount": 1400,
+          "completionStatus": "pending"
+        },
+        {
+          "invoiceNumber": "INV-011",
+          "collectionNumber": "COL-011",
+          "collectionDate": "2024-10-15T09:00:00Z",
+          "paidAmount": 1700,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-012",
+          "collectionNumber": "COL-012",
+          "collectionDate": "2024-11-01T11:45:00Z",
+          "paidAmount": 1900,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-013",
+          "collectionNumber": "COL-013",
+          "collectionDate": "2024-11-15T14:30:00Z",
+          "paidAmount": 1800,
+          "completionStatus": "pending"
+        },
+        {
+          "invoiceNumber": "INV-014",
+          "collectionNumber": "COL-014",
+          "collectionDate": "2024-12-01T10:15:00Z",
+          "paidAmount": 1500,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-015",
+          "collectionNumber": "COL-015",
+          "collectionDate": "2024-12-15T12:45:00Z",
+          "paidAmount": 2000,
+          "completionStatus": "completed"
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "name": "Sunset Primary",
+      "category": "Primary",
+      "product": ["Zeraki Analytics"],
+      "county": "Sunset County",
+      "registrationDate": "2021-12-18T00:00:00.000Z",
+      "contactInfo": {
+        "phone": "555-7899",
+        "email": "contact@sunsetprimary.edu"
+      },
+      "balance": 7901,
+      "invoices": [
+        {
+          "id": "INV-001",
+          "invoiceItem": "Software License",
+          "createdAt": "2024-05-15",
+          "dueDate": "2024-06-15",
+          "amount": 1200,
+          "amountPaid": 1200,
+          "amountDue": 0,
+          "status": "completed",
+          "daysUntilDue": 0
+        },
+        {
+          "id": "INV-002",
+          "invoiceItem": "Hardware Purchase",
+          "createdAt": "2023-05-15",
+          "dueDate": "2023-06-15",
+          "amount": 2500,
+          "amountPaid": 1000,
+          "amountDue": 1500,
+          "status": "pending",
+          "daysUntilDue": 10
+        },
+        {
+          "id": "INV-003",
+          "invoiceItem": "Consulting services",
+          "createdAt": "2022-05-15",
+          "dueDate": "2022-06-15",
+          "amount": 800,
+          "amountPaid": 200,
+          "amountDue": 600,
+          "status": "pending",
+          "daysUntilDue": 75
+        },
+        {
+          "id": "INV-004",
+          "invoiceItem": "Cloud Storage",
+          "createdAt": "2021-05-15",
+          "dueDate": "2021-06-15",
+          "amount": 2750,
+          "amountPaid": 2000,
+          "amountDue": 750,
+          "status": "pending",
+          "daysUntilDue": 25
+        },
+        {
+          "id": "INV-005",
+          "invoiceItem": "Software License",
+          "createdAt": "2020-05-15",
+          "dueDate": "2020-06-15",
+          "amount": 1200,
+          "amountPaid": 1200,
+          "amountDue": 0,
+          "status": "completed",
+          "daysUntilDue": 0
+        },
+        {
+          "id": "INV-006",
+          "invoiceItem": "Hardware Purchase",
+          "createdAt": "2019-05-15",
+          "dueDate": "2019-06-15",
+          "amount": 2500,
+          "amountPaid": 1000,
+          "amountDue": 1500,
+          "status": "pending",
+          "daysUntilDue": 10
+        },
+        {
+          "id": "INV-007",
+          "invoiceItem": "Consulting services",
+          "createdAt": "2018-05-15",
+          "dueDate": "2018-06-15",
+          "amount": 800,
+          "amountPaid": 200,
+          "amountDue": 600,
+          "status": "pending",
+          "daysUntilDue": 75
+        },
+        {
+          "id": "INV-008",
+          "invoiceItem": "Cloud Storage",
+          "createdAt": "2017-05-15",
+          "dueDate": "2017-06-15",
+          "amount": 2750,
+          "amountPaid": 2000,
+          "amountDue": 750,
+          "status": "pending",
+          "daysUntilDue": 25
+        },
+        {
+          "id": "INV-009",
+          "invoiceItem": "Software License",
+          "createdAt": "2016-05-15",
+          "dueDate": "2016-06-15",
+          "amount": 1200,
+          "amountPaid": 1200,
+          "amountDue": 0,
+          "status": "completed",
+          "daysUntilDue": 0
+        },
+        {
+          "id": "INV-010",
+          "invoiceItem": "Hardware Purchase",
+          "createdAt": "2015-05-15",
+          "dueDate": "2015-06-15",
+          "amount": 2500,
+          "amountPaid": 1000,
+          "amountDue": 1500,
+          "status": "pending",
+          "daysUntilDue": 10
+        },
+        {
+          "id": "INV-011",
+          "invoiceItem": "Consulting services",
+          "createdAt": "2014-05-15",
+          "dueDate": "2014-06-15",
+          "amount": 800,
+          "amountPaid": 200,
+          "amountDue": 600,
+          "status": "pending",
+          "daysUntilDue": 75
+        },
+        {
+          "id": "INV-012",
+          "invoiceItem": "Cloud Storage",
+          "createdAt": "2013-05-15",
+          "dueDate": "2013-06-15",
+          "amount": 2750,
+          "amountPaid": 2750,
+          "amountDue": 0,
+          "status": "completed",
+          "daysUntilDue": 0
+        }
+      ],
+      "collections": [
+        {
+          "invoiceNumber": "INV-001",
+          "collectionNumber": "COL-001",
+          "collectionDate": "2024-05-20T10:30:00Z",
+          "paidAmount": 1500,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-002",
+          "collectionNumber": "COL-002",
+          "collectionDate": "2024-06-15T14:45:00Z",
+          "paidAmount": 1200,
+          "completionStatus": "pending"
+        },
+        {
+          "invoiceNumber": "INV-003",
+          "collectionNumber": "COL-003",
+          "collectionDate": "2024-06-30T09:00:00Z",
+          "paidAmount": 500,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-004",
+          "collectionNumber": "COL-004",
+          "collectionDate": "2024-07-10T11:15:00Z",
+          "paidAmount": 2000,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-005",
+          "collectionNumber": "COL-005",
+          "collectionDate": "2024-07-25T16:00:00Z",
+          "paidAmount": 750,
+          "completionStatus": "pending"
+        },
+        {
+          "invoiceNumber": "INV-006",
+          "collectionNumber": "COL-006",
+          "collectionDate": "2024-08-05T12:30:00Z",
+          "paidAmount": 1300,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-007",
+          "collectionNumber": "COL-007",
+          "collectionDate": "2024-08-20T08:45:00Z",
+          "paidAmount": 1600,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-008",
+          "collectionNumber": "COL-008",
+          "collectionDate": "2024-09-01T15:00:00Z",
+          "paidAmount": 900,
+          "completionStatus": "pending"
+        },
+        {
+          "invoiceNumber": "INV-009",
+          "collectionNumber": "COL-009",
+          "collectionDate": "2024-09-15T10:15:00Z",
+          "paidAmount": 1100,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-010",
+          "collectionNumber": "COL-010",
+          "collectionDate": "2024-10-01T13:30:00Z",
+          "paidAmount": 1400,
+          "completionStatus": "pending"
+        },
+        {
+          "invoiceNumber": "INV-011",
+          "collectionNumber": "COL-011",
+          "collectionDate": "2024-10-15T09:00:00Z",
+          "paidAmount": 1700,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-012",
+          "collectionNumber": "COL-012",
+          "collectionDate": "2024-11-01T11:45:00Z",
+          "paidAmount": 1900,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-013",
+          "collectionNumber": "COL-013",
+          "collectionDate": "2024-11-15T14:30:00Z",
+          "paidAmount": 1800,
+          "completionStatus": "pending"
+        },
+        {
+          "invoiceNumber": "INV-014",
+          "collectionNumber": "COL-014",
+          "collectionDate": "2024-12-01T10:15:00Z",
+          "paidAmount": 1500,
+          "completionStatus": "completed"
+        },
+        {
+          "invoiceNumber": "INV-015",
+          "collectionNumber": "COL-015",
+          "collectionDate": "2024-12-15T12:45:00Z",
+          "paidAmount": 2000,
+          "completionStatus": "completed"
+        }
+      ]
+    }
+  ]
+}

@@ -20,6 +20,7 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
+import { UpcomingInvoicesType } from "@/types/dashboard";
 import {
   ColumnDef,
   ColumnFiltersState,
@@ -33,80 +34,18 @@ import {
   getSortedRowModel,
   useReactTable,
 } from "@tanstack/react-table";
+import axios from "axios";
 import { format } from "date-fns";
 import { MoreHorizontal } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { formatCurrency } from "@/lib/utils";
 
-type Payment = {
-  school: string;
-  amountDue: number;
-  dueDate: Date;
-};
-
-const data: Payment[] = [
-  {
-    school: "Greenwood High School",
-    amountDue: 1200,
-    dueDate: new Date("2023-06-15"),
-  },
-  {
-    school: "Sunnydale Elementary",
-    amountDue: 850,
-    dueDate: new Date("2024-06-20"),
-  },
-  {
-    school: "Riverdale Academy",
-    amountDue: 950,
-    dueDate: new Date("2021-07-01"),
-  },
-  {
-    school: "Mountainview High",
-    amountDue: 1500,
-    dueDate: new Date("2024-07-05"),
-  },
-  {
-    school: "Lakeside Middle School",
-    amountDue: 675,
-    dueDate: new Date("2024-06-18"),
-  },
-  {
-    school: "Springfield Primary",
-    amountDue: 725,
-    dueDate: new Date("2019-06-22"),
-  },
-  {
-    school: "Hilltop High School",
-    amountDue: 1100,
-    dueDate: new Date("2024-07-10"),
-  },
-  {
-    school: "Cedarwood Academy",
-    amountDue: 940,
-    dueDate: new Date("2024-07-15"),
-  },
-  {
-    school: "Brookfield Elementary",
-    amountDue: 820,
-    dueDate: new Date("2024-06-25"),
-  },
-  {
-    school: "Maplewood High",
-    amountDue: 1300,
-    dueDate: new Date("2024-07-20"),
-  },
-];
-
-const formatDate = (date: Date): string => {
+const BACKEND_URL = import.meta.env.VITE_APP_BACKEND_URL;
+ const formatDate = (date: Date): string => {
   return format(date, "dd-MM-yyyy");
 };
 
-const formatCurrency = (amount: number) =>
-  new Intl.NumberFormat("en-US", {
-    style: "currency",
-    currency: "USD",
-  }).format(amount);
-
-export const columns: ColumnDef<Payment>[] = [
+const columns: ColumnDef<UpcomingInvoicesType>[] = [
   {
     accessorKey: "school",
     header: "School Name",
@@ -138,7 +77,6 @@ export const columns: ColumnDef<Payment>[] = [
     enableHiding: false,
     cell: ({ row }) => {
       const payment = row.original;
-      console.log(payment);
 
       return (
         <AlertDialog>
@@ -150,7 +88,7 @@ export const columns: ColumnDef<Payment>[] = [
           </AlertDialogTrigger>
           <AlertDialogContent>
             <AlertDialogHeader>
-              <AlertDialogTitle>{payment.school}</AlertDialogTitle>
+              <AlertDialogTitle>{payment.name}</AlertDialogTitle>
               <AlertDialogDescription>
                 <p className="text-xs text-muted-foreground">
                   {formatDate(payment.dueDate)}
@@ -200,6 +138,25 @@ const UpcomingInvoices = () => {
     pageIndex: 0,
     pageSize: 5,
   });
+
+  const [data, setData] = useState<UpcomingInvoicesType[]>([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get(`${BACKEND_URL}/upcomingInvoices`);
+        const updatedData = response.data.map((item: UpcomingInvoicesType) => ({
+          ...item,
+          dueDate: new Date(item.dueDate),
+        }));
+        setData(updatedData);
+      } catch (error) {
+        console.error("Error fetching data: ", error);
+      }
+    };
+
+    fetchData();
+  }, []);
 
   const table = useReactTable({
     data: data.sort((a, b) => b.dueDate.getTime() - a.dueDate.getTime()),

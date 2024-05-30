@@ -1,27 +1,35 @@
-import { Bar, BarChart, Legend, Rectangle, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+import { useState, useEffect } from "react";
+import {
+  Bar,
+  BarChart,
+  Legend,
+  Rectangle,
+  ResponsiveContainer,
+  Tooltip,
+  XAxis,
+  YAxis,
+} from "recharts";
+import axios from "axios";
 
-const data = [
-  {
-    name: "Primary",
-    analytics: 4000,
-    finance: 2400,
-    timetable: 1000,
-  },
-  {
-    name: "Secondary",
-    analytics: 3000,
-    finance: 1398,
-    timetable: 2000,
-  },
-  {
-    name: "IGCSE",
-    analytics: 2000,
-    finance: 4800,
-    timetable: 3000,
-  },
-];
+const BACKEND_URL = import.meta.env.VITE_APP_BACKEND_URL
 
 const SignUpOverview = () => {
+  const [data, setData] = useState([]);
+  
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get(`${BACKEND_URL}/signUpOverview`);
+        setData(response.data);
+      } catch (error) {
+        console.error("Error fetching data: ", error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
   return (
     <ResponsiveContainer width="100%" height={350}>
       <BarChart data={data} className="my-4">

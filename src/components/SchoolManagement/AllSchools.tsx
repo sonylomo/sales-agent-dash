@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Input } from "../ui/input";
 import SchoolCard from "./SchoolCard";
 import {
@@ -18,109 +18,60 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { SchoolCategory, SchoolDetails } from "@/types/all-schools";
+import axios from "axios";
 
-type SchoolDetails = {
-  id: string;
-  name: string;
-  imageSrc: string;
-  category: string;
-  location: string;
-  email: string;
-};
-
-const data: SchoolDetails[] = [
-  {
-    id: "1",
-    name: "Greenwood High School",
-    imageSrc: Sample,
-    category: "Secondary",
-    location: "Greenwood City",
-    email: "contact@greenwoodhigh.edu",
-  },
-  {
-    id: "2",
-    name: "Sunnydale Elementary",
-    imageSrc: Sample2,
-    category: "Primary",
-    location: "Sunnydale",
-    email: "info@sunnydaleelem.edu",
-  },
-  {
-    id: "3",
-    name: "Riverdale Academy",
-    imageSrc: Sample3,
-    category: "Academy",
-    location: "Riverdale",
-    email: "contact@riverdaleacademy.edu",
-  },
-  {
-    id: "4",
-    name: "Mountainview High",
-    imageSrc: Sample4,
-    category: "Secondary",
-    location: "Mountainview",
-    email: "info@mountainviewhigh.edu",
-  },
-  {
-    id: "5",
-    name: "Lakeside Middle School",
-    imageSrc: Sample5,
-    category: "IGCSE",
-    location: "Lakeside",
-    email: "contact@lakesidemiddle.edu",
-  },
-  {
-    id: "6",
-    name: "Springfield Primary",
-    imageSrc: HighSchool,
-    category: "Primary",
-    location: "Springfield",
-    email: "info@springfieldprimary.edu",
-  },
-  {
-    id: "7",
-    name: "Hilltop High School",
-    imageSrc: HighSchool2,
-    category: "Secondary",
-    location: "Hilltop",
-    email: "contact@hilltophigh.edu",
-  },
-  {
-    id: "8",
-    name: "Cedarwood Academy",
-    imageSrc: Sample,
-    category: "IGCSE",
-    location: "Cedarwood",
-    email: "info@cedarwoodacademy.edu",
-  },
-  {
-    id: "9",
-    name: "Brookfield Elementary",
-    imageSrc: Sample3,
-    category: "Primary",
-    location: "Brookfield",
-    email: "contact@brookfieldelem.edu",
-  },
-  {
-    id: "10",
-    name: "Maplewood High",
-    imageSrc: Sample5,
-    category: "Secondary",
-    location: "Maplewood",
-    email: "info@maplewoodhigh.edu",
-  },
-];
+const BACKEND_URL = import.meta.env.VITE_APP_BACKEND_URL;
 
 const AllSchools = () => {
   const [filterValue, setFilterValue] = useState("");
   const [filterCategory, setFilterCategory] = useState("");
+  const [data, setData] = useState<SchoolDetails[]>([]);
 
-  const filteredData = data.filter(
-    (school) =>
-      school.name.toLowerCase().includes(filterValue.toLowerCase()) &&
-      (filterCategory === "" ||
-        school.category.toLowerCase() === filterCategory)
-  );
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get(`${BACKEND_URL}/schoolDetails`);
+        const imagePaths = [
+          Sample,
+          Sample2,
+          Sample3,
+          Sample4,
+          Sample5,
+          HighSchool,
+          HighSchool2,
+        ];
+
+        const updatedData = response.data.map(
+          (item: SchoolDetails, index: number) => ({
+            ...item,
+            imageSrc: imagePaths[index % imagePaths.length],
+          })
+        );
+
+        setData(updatedData);
+      } catch (error) {
+        console.error("Error fetching data: ", error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
+  const filteredData =
+    data &&
+    data.filter(
+      (school) =>
+        school.name.toLowerCase().includes(filterValue.toLowerCase()) &&
+        (filterCategory === "" ||
+          school?.category?.toLowerCase() === filterCategory)
+    );
+
+  const categoryOptions = Object.keys(SchoolCategory).map((key) => (
+    <SelectItem key={key} value={key}>
+      {key}
+    </SelectItem>
+  ));
 
   return (
     <div className="space-y-2">
@@ -135,11 +86,7 @@ const AllSchools = () => {
           <SelectTrigger className="w-48">
             <SelectValue placeholder="Select Category" />
           </SelectTrigger>
-          <SelectContent>
-            <SelectItem value="primary">Primary</SelectItem>
-            <SelectItem value="secondary">Secondary</SelectItem>
-            <SelectItem value="igcse">IGCSE</SelectItem>
-          </SelectContent>
+          <SelectContent>{categoryOptions}</SelectContent>
         </Select>
       </div>
       <ul className="grid grid-cols-1 md:grid-cols-2 gap-8">

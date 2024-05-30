@@ -1,4 +1,5 @@
 import { Card } from "@/components/ui/card";
+import { SchoolDetails } from "@/types/all-schools";
 import { MdLocationPin } from "react-icons/md";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Link } from "react-router-dom";
@@ -6,15 +7,10 @@ import { Link } from "react-router-dom";
 const SchoolCard = ({
   schoolDetails,
 }: {
-  schoolDetails: {
-    name: string;
-    imageSrc: string;
-    id: string;
-    category: string;
-    location: string;
-    email: string;
-  };
+  schoolDetails: SchoolDetails
 }) => {
+
+  console.log("schoolDetails", schoolDetails)
   return (
     <Link to={`/school-management/${schoolDetails.id}`}>
       <Card className="flex flex-between items-center min-h-48 p-4 gap-10">
@@ -41,7 +37,7 @@ const SchoolCard = ({
             </a> */}
             <p className="text-sm flex items-center gap-1">
               <MdLocationPin className="size-4 text-primary-pink" />{" "}
-              {schoolDetails.location}
+              {schoolDetails.county}
             </p>
           </div>
         </div>

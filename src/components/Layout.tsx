@@ -1,10 +1,9 @@
-import { RxPlusCircled } from "react-icons/rx";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 // import { Menu } from "@/components/Menu";
 import SideBar from "@/components/SideBar";
-import { Button } from "@/components/ui/button";
 import { Outlet, useLocation } from "react-router-dom";
+import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 
 const Layout = () => {
   const location = useLocation();
@@ -42,10 +41,13 @@ const Layout = () => {
                       : "School Management"}
                   </h2>
                   <div className="ml-auto">
-                    <Button>
-                      <RxPlusCircled className="mr-2 size-4" />
-                      Add music
-                    </Button>
+                    <Avatar>
+                      <AvatarImage
+                        src="https://github.com/sonylomo.png"
+                        alt="Sonia Lomo"
+                      />
+                      <AvatarFallback>SL</AvatarFallback>
+                    </Avatar>
                   </div>
                 </div>
                 {/* Body of dashboard */}

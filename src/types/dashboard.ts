@@ -8,3 +8,9 @@ export type PieData = {
   finance: Metric[];
   timetable: Metric[];
 };
+
+export type UpcomingInvoicesType = {
+  name: string;
+  amountDue: number;
+  dueDate: Date;
+};

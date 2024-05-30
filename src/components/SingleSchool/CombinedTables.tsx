@@ -1,11 +1,13 @@
-import { Card, CardHeader, CardTitle, CardContent } from "../ui/card";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { InvoiceData } from "@/types/single-school";
+import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
 import CollectionsTable from "./CollectionsTable";
 import InvoiceTable from "./InvoiceTable";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
-const CombinedTables = () => {
+const CombinedTables = (prop: { data: InvoiceData[] }) => {
+  console.log(prop);
   return (
-    <Tabs defaultValue="account" className="">
+    <Tabs defaultValue="invoices">
       <TabsList className="grid w-96 grid-cols-2">
         <TabsTrigger value="invoices">Invoices</TabsTrigger>
         <TabsTrigger value="collections">Collections</TabsTrigger>
@@ -16,7 +18,7 @@ const CombinedTables = () => {
             <CardTitle>Invoice History</CardTitle>
           </CardHeader>
           <CardContent className="">
-            <InvoiceTable />
+            <InvoiceTable data={prop.data} />
           </CardContent>
         </Card>
       </TabsContent>

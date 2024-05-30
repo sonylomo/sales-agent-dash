@@ -1,23 +1,27 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import PieChartDisplay from "./PieChartDisplay";
 import { PieData } from "@/types/dashboard";
+import axios from "axios";
+import { useState, useEffect } from "react";
 
-const data: PieData = {
-  analytics: [
-    { name: "Target Achieved", value: 400 },
-    { name: "Set Target", value: 1000 },
-  ],
-  finance: [
-    { name: "Target Achieved", value: 300 },
-    { name: "Set Target", value: 1000 },
-  ],
-  timetable: [
-    { name: "Target Achieved", value: 400 },
-    { name: "Set Target", value: 1000 },
-  ],
-};
+const BACKEND_URL = import.meta.env.VITE_APP_BACKEND_URL;
 
 const TargetVisual = () => {
+  const [data, setData] = useState<PieData | null>(null);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get(`${BACKEND_URL}/targetVisuals`);
+        setData(response.data);
+      } catch (error) {
+        console.error("Error fetching data: ", error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
   return (
     <div className="grid gap-4 md:grid-cols-1 lg:grid-cols-3">
       <Card>
@@ -26,7 +30,7 @@ const TargetVisual = () => {
           {/* {card.icon} */}
         </CardHeader>
         <CardContent>
-          <PieChartDisplay data={data.analytics} />
+          {data && <PieChartDisplay data={data.analytics} />}
         </CardContent>
       </Card>
       <Card>
@@ -35,7 +39,7 @@ const TargetVisual = () => {
           {/* {card.icon} */}
         </CardHeader>
         <CardContent>
-          <PieChartDisplay data={data.analytics} />
+         {data && <PieChartDisplay data={data.finance} />}
         </CardContent>
       </Card>
       <Card>
@@ -44,7 +48,7 @@ const TargetVisual = () => {
           {/* {card.icon} */}
         </CardHeader>
         <CardContent>
-          <PieChartDisplay data={data.analytics} />
+         {data && <PieChartDisplay data={data.timetable} />}
         </CardContent>
       </Card>
     </div>

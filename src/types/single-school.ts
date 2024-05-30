@@ -1,29 +1,45 @@
-export type SchoolCategory = "Primary" | "Secondary" | "IGCSE";
+import { Product, SchoolCategory } from "./all-schools";
 
-export type School = {
+export type InvoiceData = {
+  id: string;
+  invoiceItem: string;
+  createdAt: Date;
+  dueDate: Date;
+  amount: number;
+  amountPaid: number;
+  amountDue: number;
+  status: string;
+  daysUntilDue: number;
+};
+
+export type ContactInfo = {
+  phone: string;
+  email: string;
+};
+
+export type SingleSchoolDetails = {
   id: string;
   name: string;
   category: SchoolCategory;
-  product: string;
+  product: Product[];
   county: string;
-  registrationDate: Date;
-  contactInfo: {
-    phone: string;
-    email: string;
-  };
+  registrationDate: string;
+  contactInfo: ContactInfo;
   balance: number;
+  imageSrc: string;
+  invoices: InvoiceData[];
+  collections: SingleSchoolCollection[];
 };
 
-export type InvoiceStatus = "completed" | "pending";
+export enum CollectionStatus {
+  PENDING = "pending",
+  COMPLETED = "completed",
+}
 
-export type Invoice = {
+export type SingleSchoolCollection = {
   invoiceNumber: string;
-  invoiceItem: string;
-  creationDate: Date;
-  dueDate: Date;
-  totalAmount: number;
+  collectionNumber: string;
+  collectionDate: Date;
   paidAmount: number;
-  amountDue: number;
-  completionStatus: InvoiceStatus;
-  daysUntilDue: number;
+  completionStatus: CollectionStatus;
 };

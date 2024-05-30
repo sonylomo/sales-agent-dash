@@ -8,7 +8,7 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import SchoolInvoices from "@/lib/DummyData/SchoolInvoices";
+import collectionsData from "@/lib/DummyData/SchoolCollections";
 import {
   ColumnFiltersState,
   PaginationState,
@@ -29,11 +29,11 @@ import {
   RxCross2,
   RxQuestionMarkCircled,
 } from "react-icons/rx";
+import { CollectionColumns } from "./Columns";
 import DataTableFacetedFilter from "./DataTableFacetedFilter";
-import { Columns } from "./Columns";
 import DataTableViewOptions from "./DataTableView";
 
-const data = SchoolInvoices();
+const data = collectionsData;
 
 const CollectionsTable = () => {
   const [sorting, setSorting] = useState<SortingState>([]);
@@ -46,8 +46,10 @@ const CollectionsTable = () => {
   });
 
   const table = useReactTable({
-    data: data.sort((a, b) => b.dueDate.getTime() - a.dueDate.getTime()),
-    columns: Columns,
+    data: data.sort(
+      (a, b) => b.collectionDate.getTime() - a.collectionDate.getTime()
+    ),
+    columns: CollectionColumns,
     onSortingChange: setSorting,
     onColumnFiltersChange: setColumnFilters,
     getCoreRowModel: getCoreRowModel(),
@@ -87,12 +89,15 @@ const CollectionsTable = () => {
     <div className="w-full">
       <div className="flex items-center py-4">
         <Input
-          placeholder="Filter Collections..."
+          placeholder="Filter Collection Numbers..."
           value={
-            (table.getColumn("invoiceItem")?.getFilterValue() as string) ?? ""
+            (table.getColumn("collectionNumber")?.getFilterValue() as string) ??
+            ""
           }
           onChange={(event) =>
-            table.getColumn("invoiceItem")?.setFilterValue(event.target.value)
+            table
+              .getColumn("collectionNumber")
+              ?.setFilterValue(event.target.value)
           }
           className="max-w-sm mr-4"
         />
@@ -157,7 +162,7 @@ const CollectionsTable = () => {
             ) : (
               <TableRow>
                 <TableCell
-                  colSpan={Columns.length}
+                  colSpan={CollectionColumns.length}
                   className="h-24 text-center"
                 >
                   No results.

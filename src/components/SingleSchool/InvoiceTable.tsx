@@ -8,7 +8,7 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import SchoolInvoices from "@/lib/DummyData/SchoolInvoices";
+import { InvoiceData } from "@/types/single-school";
 import {
   ColumnFiltersState,
   PaginationState,
@@ -29,14 +29,14 @@ import {
   RxCross2,
   RxQuestionMarkCircled,
 } from "react-icons/rx";
+import { InvoiceColumns } from "./Columns";
 import DataTableFacetedFilter from "./DataTableFacetedFilter";
-import { Columns } from "./Columns";
 import DataTableViewOptions from "./DataTableView";
 
+// const data = SchoolInvoices();
 
-const data = SchoolInvoices();
 
-const InvoiceTable = () => {
+const InvoiceTable = (prop: { data: InvoiceData[] }) => {
   const [sorting, setSorting] = useState<SortingState>([]);
   const [columnFilters, setColumnFilters] = useState<ColumnFiltersState>([]);
   const [columnVisibility, setColumnVisibility] = useState<VisibilityState>({});
@@ -47,8 +47,10 @@ const InvoiceTable = () => {
   });
 
   const table = useReactTable({
-    data: data.sort((a, b) => b.dueDate.getTime() - a.dueDate.getTime()),
-    columns: Columns,
+    // data: prop.data.sort((a, b) => b.dueDate.getTime() - a.dueDate.getTime()),
+    data: prop.data,
+
+    columns: InvoiceColumns,
     onSortingChange: setSorting,
     onColumnFiltersChange: setColumnFilters,
     getCoreRowModel: getCoreRowModel(),
@@ -158,7 +160,7 @@ const InvoiceTable = () => {
             ) : (
               <TableRow>
                 <TableCell
-                  colSpan={Columns.length}
+                  colSpan={InvoiceColumns.length}
                   className="h-24 text-center"
                 >
                   No results.
