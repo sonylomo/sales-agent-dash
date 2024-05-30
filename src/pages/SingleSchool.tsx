@@ -2,7 +2,7 @@ import { HighSchool2 } from "@/assets";
 import CombinedTables from "@/components/SingleSchool/CombinedTables";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { formatCurrency } from "@/lib/utils";
-import { InvoiceData, SingleSchoolDetails } from "@/types/single-school";
+import { InvoiceData, SingleSchoolCollection, SingleSchoolDetails } from "@/types/single-school";
 import axios from "axios";
 import { format } from "date-fns";
 import { useEffect, useState } from "react";
@@ -11,6 +11,7 @@ import { LuDollarSign } from "react-icons/lu";
 import { MdEmail, MdLocationPin } from "react-icons/md";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { useParams } from "react-router-dom";
+
 
 const BACKEND_URL = import.meta.env.VITE_APP_BACKEND_URL;
 
@@ -33,10 +34,15 @@ const SingleSchool = () => {
             createdAt: new Date(invoice.createdAt),
             dueDate: new Date(invoice.dueDate),
           })),
+          collections: response.data.collections.map(
+            (collection: SingleSchoolCollection) => ({
+              ...collection,
+              collectionDate: new Date(collection.collectionDate),
+            })
+          ),
         };
 
         setData(updatedData);
-        console.log(updatedData);
         
       } catch (error) {
         console.error("Error fetching data: ", error);
@@ -109,7 +115,7 @@ const SingleSchool = () => {
           </Card>
         </div>{" "}
         {/* Invoice Table */}
-        {data && <CombinedTables data={data.invoices} />}
+        {data && <CombinedTables invoices={data.invoices} collections={data.collections} />}
       </div>
     </div>
   );

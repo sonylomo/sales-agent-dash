@@ -8,7 +8,7 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import collectionsData from "@/lib/DummyData/SchoolCollections";
+import { SingleSchoolCollection } from "@/types/single-school";
 import {
   ColumnFiltersState,
   PaginationState,
@@ -33,9 +33,8 @@ import { CollectionColumns } from "./Columns";
 import DataTableFacetedFilter from "./DataTableFacetedFilter";
 import DataTableViewOptions from "./DataTableView";
 
-const data = collectionsData;
 
-const CollectionsTable = () => {
+const CollectionsTable = ({ data }: { data: SingleSchoolCollection[] }) => {
   const [sorting, setSorting] = useState<SortingState>([]);
   const [columnFilters, setColumnFilters] = useState<ColumnFiltersState>([]);
   const [columnVisibility, setColumnVisibility] = useState<VisibilityState>({});

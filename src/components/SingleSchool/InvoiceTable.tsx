@@ -33,10 +33,7 @@ import { InvoiceColumns } from "./Columns";
 import DataTableFacetedFilter from "./DataTableFacetedFilter";
 import DataTableViewOptions from "./DataTableView";
 
-// const data = SchoolInvoices();
-
-
-const InvoiceTable = (prop: { data: InvoiceData[] }) => {
+const InvoiceTable = ({ data }: { data: InvoiceData[] }) => {
   const [sorting, setSorting] = useState<SortingState>([]);
   const [columnFilters, setColumnFilters] = useState<ColumnFiltersState>([]);
   const [columnVisibility, setColumnVisibility] = useState<VisibilityState>({});
@@ -47,9 +44,7 @@ const InvoiceTable = (prop: { data: InvoiceData[] }) => {
   });
 
   const table = useReactTable({
-    // data: prop.data.sort((a, b) => b.dueDate.getTime() - a.dueDate.getTime()),
-    data: prop.data,
-
+    data: data.sort((a, b) => b.dueDate.getTime() - a.dueDate.getTime()),
     columns: InvoiceColumns,
     onSortingChange: setSorting,
     onColumnFiltersChange: setColumnFilters,
