@@ -35,6 +35,7 @@ module.exports = {
         "primary-pink": "#D95448",
         "secondary-pink": "#F2BBB6",
         "try-pink": "#F3D6D0",
+        "dark-pink": "#400101",
         "neutral-grey": "#F8F8F8",
       },
       fontFamily: {

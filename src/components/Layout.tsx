@@ -2,11 +2,12 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 
 // import { Menu } from "@/components/Menu";
 import SideBar from "@/components/SideBar";
-import { Outlet, useLocation } from "react-router-dom";
+import { Outlet, useLocation, useParams } from "react-router-dom";
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 
 const Layout = () => {
   const location = useLocation();
+  const { id } = useParams();
 
   return (
     <>
@@ -34,23 +35,25 @@ const Layout = () => {
             <SideBar className="hidden lg:block" />
             <div className="col-span-3 lg:col-span-4 lg:border-l">
               <div className="h-full px-4 py-6 lg:px-8">
-                <div className="space-between flex items-center px-8">
-                  <h2 className="text-3xl font-bold tracking-tight">
-                    {location.pathname === "/"
-                      ? "Dashboard"
-                      : "School Management"}
-                  </h2>
-                  <div className="ml-auto">
-                    <Avatar>
-                      <AvatarImage
-                        src="https://github.com/sonylomo.png"
-                        alt="Sonia Lomo"
-                      />
-                      <AvatarFallback>SL</AvatarFallback>
-                    </Avatar>
+                {!id && (
+                  <div className="space-between flex items-center px-8">
+                    <h2 className="text-3xl font-bold tracking-tight">
+                      {location.pathname === "/"
+                        ? "Dashboard"
+                        : "School Management"}
+                    </h2>
+                    <div className="ml-auto">
+                      <Avatar>
+                        <AvatarImage
+                          src="https://github.com/sonylomo.png"
+                          alt="Sonia Lomo"
+                        />
+                        <AvatarFallback>SL</AvatarFallback>
+                      </Avatar>
+                    </div>
                   </div>
-                </div>
-                {/* Body of dashboard */}
+                )}
+
                 <Outlet />
               </div>
             </div>

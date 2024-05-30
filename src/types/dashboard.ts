@@ -14,3 +14,10 @@ export type UpcomingInvoicesType = {
   amountDue: number;
   dueDate: Date;
 };
+
+export type CardMetrics = {
+  title: string;
+  value: string;
+  description: string;
+  icon: string;
+};

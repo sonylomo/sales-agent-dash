@@ -24,7 +24,7 @@ function DataTableViewOptions<TData>({
         <Button
           variant="outline"
           size="sm"
-          className="ml-auto hidden h-8 lg:flex"
+          className="ml-auto border border-secondary-pink rounded-[32px] bg-try-pink hidden h-8 lg:flex"
         >
           <RxMixerHorizontal className="mr-2 h-4 w-4" />
           View

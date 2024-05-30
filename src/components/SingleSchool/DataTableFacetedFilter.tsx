@@ -40,9 +40,13 @@ const DataTableFacetedFilter = <TData, TValue>({
   return (
     <Popover>
       <PopoverTrigger asChild>
-        <Button variant="outline" size="sm" className=" border-dashed">
+        <Button
+          variant="outline"
+          size="default"
+          className="border-dashed border-try-pink rounded-[32px]"
+        >
           <RxPlusCircled className="mr-2 h-4 w-4" />
-          {title}
+          <span className="text-dark-pink"> {title}</span>
           {selectedValues?.size > 0 && (
             <>
               <Separator orientation="vertical" className="mx-2 h-4" />

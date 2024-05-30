@@ -53,20 +53,24 @@ const SingleSchool = () => {
   }, [id]);
 
   return (
-    <div className="hidden flex-col md:flex">
+    <div
+      className="hidden flex-col md:flex -mt-6 -mx-8"
+      style={{
+        background: "linear-gradient(180deg, #F3D6D0 40%, transparent 50%)",
+      }}
+    >
       <div className="flex-1 space-y-4 p-8 pt-6">
         {/* School details */}
-        {/* Name, type, Product using, country , registration date, contact info, school balance */}
         <div className="flex w-[80%] mx-auto gap-20 items-center pb-16 pt-5">
           <LazyLoadImage
-            className="rounded-full size-36 border"
+            className="rounded-full size-36 border border-try-pink"
             src={data?.imageSrc}
             alt={data?.name}
           />
           <div>
             <div className="flex items-center gap-4 mb-2">
               <h1 className="font-bold text-2xl -ml-2">{data?.name}</h1>
-              <p className="text-sm font-medium text-primary-pink bg-try-pink w-fit px-2 py-1 rounded-full">
+              <p className="text-sm font-medium text-primary-pink border border-primary-pink w-fit px-2 py-1 rounded-full">
                 {data?.category}
               </p>
             </div>
@@ -93,11 +97,12 @@ const SingleSchool = () => {
               </div>
             </div>
             <p className="text-sm flex items-center gap-1 mt-4">
-              {data && data.product.map((product) => (
-                <span className="text-sm font-medium text-primary-pink bg-try-pink w-fit px-2 py-1 rounded-full">
-                  {product}
-                </span>
-              ))}
+              {data &&
+                data.product.map((product) => (
+                  <span className="text-sm font-medium text-dark-pink bg-try-pink border border-dark-pink w-fit px-3 py-1 rounded-full">
+                    {product}
+                  </span>
+                ))}
             </p>
           </div>
           <Card className="min-w-64 ml-auto">
@@ -105,7 +110,7 @@ const SingleSchool = () => {
               <CardTitle className="text-sm font-medium">
                 Payment Balance:
               </CardTitle>
-              <LuDollarSign />
+              <LuDollarSign className="text-primary-pink size-6" />
             </CardHeader>
             <CardContent>
               <div className="text-2xl font-bold text-green-600">
@@ -115,7 +120,12 @@ const SingleSchool = () => {
           </Card>
         </div>{" "}
         {/* Invoice Table */}
-        {data && <CombinedTables invoices={data.invoices} collections={data.collections} />}
+        {data && (
+          <CombinedTables
+            invoices={data.invoices}
+            collections={data.collections}
+          />
+        )}
       </div>
     </div>
   );

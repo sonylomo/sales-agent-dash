@@ -38,7 +38,6 @@ const SignUpOverview = () => {
           stroke="#888888"
           fontSize={12}
           tickLine={false}
-          // axisLine={false}
         />
         <YAxis
           stroke="#888888"
@@ -56,24 +55,24 @@ const SignUpOverview = () => {
         /> */}
         <Bar
           dataKey="analytics"
-          fill="#8884d8"
+          fill="#D95448"
           radius={[4, 4, 0, 0]}
-          activeBar={<Rectangle fill="pink" stroke="blue" />}
+          activeBar={<Rectangle stroke="#F3D6D0" />}
         />
         <Bar
           dataKey="finance"
-          fill="#000000"
+          fill="#400101"
           radius={[4, 4, 0, 0]}
-          activeBar={<Rectangle fill="red" stroke="black" />}
+          activeBar={<Rectangle stroke="#F3D6D0" />}
         />
 
         <Bar
           dataKey="timetable"
-          fill="#82ca9d"
+          fill="#F2BBB6"
           radius={[4, 4, 0, 0]}
-          activeBar={<Rectangle fill="gold" stroke="purple" />}
+          activeBar={<Rectangle stroke="purple" />}
         />
-        <Legend />
+        <Legend/>
       </BarChart>
     </ResponsiveContainer>
   );

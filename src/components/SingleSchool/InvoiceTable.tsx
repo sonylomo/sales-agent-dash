@@ -94,10 +94,10 @@ const InvoiceTable = ({ data }: { data: InvoiceData[] }) => {
           }
           className="max-w-sm mr-4"
         />
-        {table.getColumn("completionStatus") && (
+        {table.getColumn("status") && (
           <DataTableFacetedFilter
-            column={table.getColumn("completionStatus")}
-            title="Completed Status"
+            column={table.getColumn("status")}
+            title="Completion Status"
             options={statuses}
           />
         )}

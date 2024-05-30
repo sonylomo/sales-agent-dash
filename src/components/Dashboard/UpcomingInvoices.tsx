@@ -1,14 +1,3 @@
-import {
-  AlertDialog,
-  AlertDialogAction,
-  AlertDialogCancel,
-  AlertDialogContent,
-  AlertDialogDescription,
-  AlertDialogFooter,
-  AlertDialogHeader,
-  AlertDialogTitle,
-  AlertDialogTrigger,
-} from "@/components/ui/alert-dialog";
 import { Button } from "@/components/ui/button";
 
 import { Input } from "@/components/ui/input";
@@ -22,7 +11,6 @@ import {
 } from "@/components/ui/table";
 import { UpcomingInvoicesType } from "@/types/dashboard";
 import {
-  ColumnDef,
   ColumnFiltersState,
   PaginationState,
   SortingState,
@@ -35,99 +23,10 @@ import {
   useReactTable,
 } from "@tanstack/react-table";
 import axios from "axios";
-import { format } from "date-fns";
-import { MoreHorizontal } from "lucide-react";
 import { useEffect, useState } from "react";
-import { formatCurrency } from "@/lib/utils";
+import UpcomingInvoicesColumns from "./UpcomingInvoicesColumns";
 
 const BACKEND_URL = import.meta.env.VITE_APP_BACKEND_URL;
- const formatDate = (date: Date): string => {
-  return format(date, "dd-MM-yyyy");
-};
-
-const columns: ColumnDef<UpcomingInvoicesType>[] = [
-  {
-    accessorKey: "school",
-    header: "School Name",
-    cell: ({ row }) => (
-      <div className="capitalize">{row.getValue("school")}</div>
-    ),
-  },
-  {
-    accessorKey: "amountDue",
-    header: () => <div className="text-left">Amount Due</div>,
-    cell: ({ row }) => {
-      const amount = parseFloat(row.getValue("amountDue"));
-
-      return (
-        <div className="text-left font-medium">{formatCurrency(amount)}</div>
-      );
-    },
-  },
-  {
-    accessorKey: "dueDate",
-    header: "Due Date",
-    cell: ({ row }) => (
-      <div className="lowercase">{formatDate(row.getValue("dueDate"))}</div>
-    ),
-  },
-
-  {
-    id: "actions",
-    enableHiding: false,
-    cell: ({ row }) => {
-      const payment = row.original;
-
-      return (
-        <AlertDialog>
-          <AlertDialogTrigger>
-            <Button variant="ghost" className="h-8 w-8 p-0">
-              <span className="sr-only">Open menu</span>
-              <MoreHorizontal className="h-4 w-4" />
-            </Button>
-          </AlertDialogTrigger>
-          <AlertDialogContent>
-            <AlertDialogHeader>
-              <AlertDialogTitle>{payment.name}</AlertDialogTitle>
-              <AlertDialogDescription>
-                <p className="text-xs text-muted-foreground">
-                  {formatDate(payment.dueDate)}
-                </p>
-                <div className="text-2xl font-bold">
-                  {formatCurrency(payment.amountDue)}
-                </div>
-              </AlertDialogDescription>
-            </AlertDialogHeader>
-            <AlertDialogFooter>
-              <AlertDialogCancel>Cancel</AlertDialogCancel>
-              <AlertDialogAction>Continue</AlertDialogAction>
-            </AlertDialogFooter>
-          </AlertDialogContent>
-        </AlertDialog>
-
-        // <DropdownMenu>
-        //   <DropdownMenuTrigger asChild>
-        //     <Button variant="ghost" className="h-8 w-8 p-0">
-        //       <span className="sr-only">Open menu</span>
-        //       <MoreHorizontal className="h-4 w-4" />
-        //     </Button>
-        //   </DropdownMenuTrigger>
-        //   <DropdownMenuContent align="end">
-        //     <DropdownMenuLabel>Actions</DropdownMenuLabel>
-        //     <DropdownMenuItem
-        //       onClick={() => navigator.clipboard.writeText(payment.school)}
-        //     >
-        //       Copy payment ID
-        //     </DropdownMenuItem>
-        //     <DropdownMenuSeparator />
-        //     <DropdownMenuItem>View customer</DropdownMenuItem>
-        //     <DropdownMenuItem>View payment details</DropdownMenuItem>
-        //   </DropdownMenuContent>
-        // </DropdownMenu>
-      );
-    },
-  },
-];
 
 const UpcomingInvoices = () => {
   const [sorting, setSorting] = useState<SortingState>([]);
@@ -160,7 +59,7 @@ const UpcomingInvoices = () => {
 
   const table = useReactTable({
     data: data.sort((a, b) => b.dueDate.getTime() - a.dueDate.getTime()),
-    columns,
+    columns: UpcomingInvoicesColumns,
     onSortingChange: setSorting,
     onColumnFiltersChange: setColumnFilters,
     getCoreRowModel: getCoreRowModel(),
@@ -231,7 +130,7 @@ const UpcomingInvoices = () => {
             ) : (
               <TableRow>
                 <TableCell
-                  colSpan={columns.length}
+                  colSpan={UpcomingInvoices.length}
                   className="h-24 text-center"
                 >
                   No results.
