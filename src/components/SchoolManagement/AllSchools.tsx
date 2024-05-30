@@ -75,7 +75,7 @@ const AllSchools = () => {
 
   return (
     <div className="space-y-2">
-      <div className="flex justify-between items-center py-4">
+      <div className="flex justify-between items-center gap-2 py-4">
         <Input
           placeholder="Search for schools..."
           value={filterValue}

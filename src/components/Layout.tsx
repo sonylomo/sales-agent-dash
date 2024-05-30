@@ -1,9 +1,9 @@
-import { LazyLoadImage } from "react-lazy-load-image-component";
-
 // import { Menu } from "@/components/Menu";
 import SideBar from "@/components/SideBar";
-import { Outlet, useLocation, useParams } from "react-router-dom";
+import { FaSalesforce } from "react-icons/fa6";
+import { Link, Outlet, useLocation, useParams } from "react-router-dom";
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
+import MenuBar from "./MenuBar";
 
 const Layout = () => {
   const location = useLocation();
@@ -11,21 +11,11 @@ const Layout = () => {
 
   return (
     <>
-      <div className="md:hidden">
-        <LazyLoadImage
-          src="/examples/music-light.png"
-          width={1280}
-          height={1114}
-          alt="Music"
-          className="block dark:hidden"
-        />
-        <LazyLoadImage
-          src="/examples/music-dark.png"
-          width={1280}
-          height={1114}
-          alt="Music"
-          className="hidden dark:block"
-        />
+      <div className="flex items-center justify-between md:hidden px-10 md:px-0 bg-white">
+        <FaSalesforce className="text-primary-pink size-24" />
+        <span className="sr-only">Sales Agent Dashboard</span>
+
+        <MenuBar />
       </div>
 
       {/* <Menu /> */}

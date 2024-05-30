@@ -2,7 +2,11 @@ import { HighSchool2 } from "@/assets";
 import CombinedTables from "@/components/SingleSchool/CombinedTables";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { formatCurrency } from "@/lib/utils";
-import { InvoiceData, SingleSchoolCollection, SingleSchoolDetails } from "@/types/single-school";
+import {
+  InvoiceData,
+  SingleSchoolCollection,
+  SingleSchoolDetails,
+} from "@/types/single-school";
 import axios from "axios";
 import { format } from "date-fns";
 import { useEffect, useState } from "react";
@@ -11,7 +15,6 @@ import { LuDollarSign } from "react-icons/lu";
 import { MdEmail, MdLocationPin } from "react-icons/md";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { useParams } from "react-router-dom";
-
 
 const BACKEND_URL = import.meta.env.VITE_APP_BACKEND_URL;
 
@@ -43,7 +46,6 @@ const SingleSchool = () => {
         };
 
         setData(updatedData);
-        
       } catch (error) {
         console.error("Error fetching data: ", error);
       }
@@ -54,21 +56,21 @@ const SingleSchool = () => {
 
   return (
     <div
-      className="hidden flex-col md:flex -mt-6 -mx-8"
+      className="flex-col flex -mt-6 -mx-8"
       style={{
         background: "linear-gradient(180deg, #F3D6D0 40%, transparent 50%)",
       }}
     >
       <div className="flex-1 space-y-4 p-8 pt-6">
         {/* School details */}
-        <div className="flex w-[80%] mx-auto gap-20 items-center pb-16 pt-5">
+        <div className="flex flex-col md:flex-row w-[80%] mx-auto gap-20 items-center pb-16 pt-5">
           <LazyLoadImage
             className="rounded-full size-36 border border-try-pink"
             src={data?.imageSrc}
             alt={data?.name}
           />
           <div>
-            <div className="flex items-center gap-4 mb-2">
+            <div className="flex flex-col md:flex-row items-center gap-4 mb-2">
               <h1 className="font-bold text-2xl -ml-2">{data?.name}</h1>
               <p className="text-sm font-medium text-primary-pink border border-primary-pink w-fit px-2 py-1 rounded-full">
                 {data?.category}
@@ -105,7 +107,7 @@ const SingleSchool = () => {
                 ))}
             </p>
           </div>
-          <Card className="min-w-64 ml-auto">
+          <Card className="min-w-64 mx-auto md:ml-auto">
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
               <CardTitle className="text-sm font-medium">
                 Payment Balance:

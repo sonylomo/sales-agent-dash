@@ -10,14 +10,15 @@ const SideBar = ({ className }: { className: string }) => {
       <div className="space-y-4 py-4 fixed">
         <div className="px-2 py-2">
           <h1 className="mb-2 px-4 text-2xl font-semibold tracking-tight flex items-center gap-4">
-            <FaSalesforce className="text-primary-pink size-24" /> Sales Admin
+            <FaSalesforce className="text-primary-pink size-24" />
+            <span className="sr-only">Sales Agent Dashboard</span>
           </h1>
         </div>
         <div className="px-4 py-2">
           <div className="space-y-1 flex flex-col">
             <Button
               variant="ghost"
-              className="text-lg font-semibold justify-start "
+              className="text-base font-semibold justify-start text-wrap"
               onClick={() => navigate("/")}
             >
               <svg
@@ -42,7 +43,7 @@ const SideBar = ({ className }: { className: string }) => {
           <div className="space-y-1 flex flex-col">
             <Button
               variant="ghost"
-              className="text-lg font-semibold justify-start"
+              className="text-base font-semibold justify-start text-wrap"
               onClick={() => navigate("/school-management")}
             >
               <svg

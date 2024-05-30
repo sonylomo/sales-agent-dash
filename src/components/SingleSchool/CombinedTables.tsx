@@ -10,17 +10,17 @@ const CombinedTables = (prop: {
 }) => {
 
   return (
-    <Tabs defaultValue="invoices">
+    <Tabs defaultValue="invoices" className="hidden md:block">
       <TabsList className="grid w-96 grid-cols-2">
         <TabsTrigger value="invoices">Invoices</TabsTrigger>
         <TabsTrigger value="collections">Collections</TabsTrigger>
       </TabsList>
-      <TabsContent value="invoices">
-        <Card className="col-span-4">
+      <TabsContent value="invoices" className="">
+        <Card className="col-span-1 md:col-span-4">
           <CardHeader>
             <CardTitle>Invoice History</CardTitle>
           </CardHeader>
-          <CardContent className="">
+          <CardContent>
             <InvoiceTable data={prop.invoices} />
           </CardContent>
         </Card>
