@@ -4,6 +4,8 @@ import CardMetrics from "@/components/Dashboard/CardMetrics";
 import SignUpOverview from "@/components/Dashboard/SignUpOverview";
 import TargetVisual from "@/components/Dashboard/TargetVisual";
 import UpcomingInvoices from "@/components/Dashboard/UpcomingInvoices";
+import { motion } from "framer-motion";
+import { variants } from "@/lib/variants";
 
 const Dashboard = () => {
   return (
@@ -19,10 +21,24 @@ const Dashboard = () => {
               <CardTitle>Sign Ups Overview</CardTitle>
             </CardHeader>
             <CardContent className="pl-2 mb-16">
-              <SignUpOverview />
+              <motion.div
+                initial={{
+                  filter: "blur(5px)",
+                  opacity: 0,
+                  y: -10,
+                }}
+                whileInView={{
+                  opacity: 1,
+                  filter: "blur(0px)",
+                  y: 0,
+                }}
+                viewport={{ once: true }}
+                transition={{ ...variants.fadeUp.transition, delay: 0.75 }}
+              >
+                <SignUpOverview />
+              </motion.div>
             </CardContent>
           </Card>
-
           {/* Upcoming Invoices */}
           <Card className="col-span-4 hidden md:block">
             <CardHeader>
